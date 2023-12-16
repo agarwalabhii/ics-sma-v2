@@ -1,0 +1,1506 @@
+[
+    {
+      "module": "Firm Info",
+      "domain": "Business Activities",
+      "label": "Retail Deli",
+      "code": "RD",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Activities",
+      "label": "Retail Grinding",
+      "code": "RG",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Processor",
+      "code": "Processor",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "3D/4D Operator",
+      "code": "3D/4D Operator",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Restaurant",
+      "code": "Restaurant",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Salvage",
+      "code": "Salvage",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Distributor",
+      "code": "Distributor",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Retailer",
+      "code": "Retailer",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Misc.",
+      "code": "Misc.",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Port of Entry",
+      "code": "Port of Entry",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Grinding Retailer",
+      "code": "Grinding Retailer",
+      "active": false,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Deli Retailer",
+      "code": "Deli Retailer",
+      "active": false,
+      "sequence": 10
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Renderer",
+      "code": "Renderer",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Transporter",
+      "code": "Transporter",
+      "active": true,
+      "sequence": 12
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Food Bank",
+      "code": "Food Bank",
+      "active": true,
+      "sequence": 13
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Animal Food",
+      "code": "Animal Food",
+      "active": true,
+      "sequence": 14
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Bonded Area",
+      "code": "Bonded Area",
+      "active": true,
+      "sequence": 15
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Broker",
+      "code": "Broker",
+      "active": true,
+      "sequence": 16
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Custom",
+      "code": "Custom",
+      "active": true,
+      "sequence": 17
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Warehouse",
+      "code": "Warehouse",
+      "active": true,
+      "sequence": 18
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Abattoir",
+      "code": "Abattoir",
+      "active": true,
+      "sequence": 19
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Inactive",
+      "code": "Inactive",
+      "active": true,
+      "sequence": 20
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Institutions",
+      "code": "Institutions",
+      "active": true,
+      "sequence": 21
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Exempt Poultry",
+      "code": "Exempt Poultry",
+      "active": true,
+      "sequence": 22
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Siluriformes Fish Pond",
+      "code": "Siluriformes Fish Pond",
+      "active": true,
+      "sequence": 23
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Siluriformes Fish Transporter",
+      "code": "SF Fish Transporter",
+      "active": false,
+      "sequence": 24
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Point of Entry",
+      "code": "Point of Entry",
+      "active": false,
+      "sequence": 25
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Point of Entry CBP",
+      "code": "Point of Entry CBP",
+      "active": false,
+      "sequence": 26
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Business Types",
+      "label": "Short Message",
+      "code": "TEST",
+      "active": false,
+      "sequence": 30
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated General Info",
+      "code": "UGI",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Owner Info",
+      "code": "UOI",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Managing Officials Info",
+      "code": "UMOI",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Org. Structure",
+      "code": "UOS",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Product Info",
+      "code": "UPI",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Additional Info",
+      "code": "UAI",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated Registration Info",
+      "code": "URI",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Updated File Attachments",
+      "code": "UFA",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "Unlocked Firm Record",
+      "code": "UFR",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Change History Reasons",
+      "label": "No Change",
+      "code": "NOC",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Domestic Broker",
+      "code": "DB",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Import Broker",
+      "code": "IB",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Renderer",
+      "code": "R",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Animal Food Manufacturer",
+      "code": "AFM",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Public Warehouseman",
+      "code": "PW",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Wholesaler",
+      "code": "WHOL",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "3D/4D Operator",
+      "code": "3DO",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Other",
+      "code": "O",
+      "active": false,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Siluriformes Fish Pond",
+      "code": "SFP",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Registration Business Types",
+      "label": "Siluriformes Fish Transporter",
+      "code": "SFT",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Tiers",
+      "label": "4",
+      "code": "4",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Tiers",
+      "label": "3",
+      "code": "3",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Tiers",
+      "label": "2",
+      "code": "2",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Firm Tiers",
+      "label": "1",
+      "code": "1",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Individually Owned",
+      "code": "IO",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Incorporated",
+      "code": "I",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Limited Liability Corporation",
+      "code": "LLC",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Partnership",
+      "code": "P",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Cooperative Corporation",
+      "code": "CC",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Form of Organization",
+      "label": "Other",
+      "code": "O",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "As Needed",
+      "code": "NE",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Weekly",
+      "code": "1W",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Biweekly",
+      "code": "2W",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Monthly",
+      "code": "1M",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Every 2 months",
+      "code": "2M",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Every 3 months",
+      "code": "3M",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Every 4 months",
+      "code": "4M",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Annually",
+      "code": "1Y",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Frequency of Visits",
+      "label": "Biannually",
+      "code": "2Y",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Last Surveillance Date Ranges",
+      "label": "0-1 months",
+      "code": "0,1",
+      "active": false,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Last Surveillance Date Ranges",
+      "label": "0-3 months",
+      "code": "0,3",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Last Surveillance Date Ranges",
+      "label": "3-6 months",
+      "code": "3,6",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Last Surveillance Date Ranges",
+      "label": "6-12 months",
+      "code": "6,12",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Last Surveillance Date Ranges",
+      "label": ">12 months",
+      "code": "12",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Nature Of Business",
+      "label": "Meat",
+      "code": "ME",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Nature Of Business",
+      "label": "Poultry",
+      "code": "PO",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Nature Of Business",
+      "label": "Siluriformes Fish",
+      "code": "SF",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Nature Of Business",
+      "label": "Other",
+      "code": "OT",
+      "active": false,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Organization Type",
+      "label": "Corporation",
+      "code": "Corporation",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Organization Type",
+      "label": "LLC",
+      "code": "LLC",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Organization Type",
+      "label": "Partnership",
+      "code": "Partnership",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Organization Type",
+      "label": "Sole Proprietorship",
+      "code": "Sole Proprietorship",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Organization Type",
+      "label": "Other",
+      "code": "Other",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Originating Products List",
+      "label": "Domestic and Imported",
+      "code": "DI",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Originating Products List",
+      "label": "Domestic",
+      "code": "DO",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Originating Products List",
+      "label": "Imported",
+      "code": "IM",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Meat",
+      "code": "M",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Poultry",
+      "code": "P",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Egg Products",
+      "code": "EP",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Shell Egg",
+      "code": "SE",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Siluriformes Fish",
+      "code": "SF",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Types Handled",
+      "label": "Non-Amenable",
+      "code": "NA",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "0 - 50,000",
+      "code": "0-50,000",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "50,001-100,000",
+      "code": "50,001-100,000",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "100,001-500,000",
+      "code": "100,001-500,000",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "500,001-1,000,000",
+      "code": "500,001-1,000,000",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "1,000,001-5,000,000",
+      "code": "1,000,001-5,000,001",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "5,000,001-10,000,000",
+      "code": "5,000,001-10,000,000",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "10,000,001+",
+      "code": "10,000,001+",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "foleytest",
+      "code": "foleytest",
+      "active": false,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "test",
+      "code": "test",
+      "active": false,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Product Volumes",
+      "label": "5-15,000",
+      "code": "5-15,000",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Registration Type",
+      "label": "Parent",
+      "code": "PA",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Registration Type",
+      "label": "Subsidiary",
+      "code": "SB",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Registration Type",
+      "label": "N/A",
+      "code": "NA",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Administrative Consent Order",
+      "code": "FAC",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Administrative Judicial Decision Order",
+      "code": "AJDO",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Administrative Exempt Ineligiblility Order",
+      "code": "ECA",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Administrative Exempt Settlement Agreement",
+      "code": "ADO",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Administrative Default Order",
+      "code": "ADF",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Criminal Conviction/Plea Agreement",
+      "code": "PLA",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Criminal Pre-Trial Diversion - PTD",
+      "code": "PTD",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Criminal Pre-Trial Diversion - Other",
+      "code": "CRO",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Criminal Other Order",
+      "code": "CROO",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Civil Consent Decree",
+      "code": "CCD",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Civil Other Settlement",
+      "code": "CIO",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Civil Other Order",
+      "code": "COO",
+      "active": true,
+      "sequence": 12
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Civil Judgment/Order",
+      "code": "CJO",
+      "active": true,
+      "sequence": 13
+    },
+    {
+      "module": "Firm Info",
+      "domain": "Type of Order",
+      "label": "Civil Decree of Forfeiture",
+      "code": "CCO",
+      "active": true,
+      "sequence": 14
+    },
+    {
+      "module": "Search Screen",
+      "domain": "OPEER Regions",
+      "label": "Western",
+      "code": "100",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Search Screen",
+      "domain": "OPEER Regions",
+      "label": "Southwest",
+      "code": "200",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Search Screen",
+      "domain": "OPEER Regions",
+      "label": "Southeast",
+      "code": "400",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Search Screen",
+      "domain": "OPEER Regions",
+      "label": "Northeast",
+      "code": "500",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Search Screen",
+      "domain": "Program Areas",
+      "label": "OFO",
+      "code": "OFO",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Search Screen",
+      "domain": "Program Areas",
+      "label": "OIEA",
+      "code": "OPEER",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Search Screen",
+      "domain": "Program Areas",
+      "label": "State Program",
+      "code": "STATE",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Search Screen",
+      "domain": "Program Areas Exclude OFO",
+      "label": "OIEA",
+      "code": "OPEER",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Search Screen",
+      "domain": "Program Areas Exclude OFO",
+      "label": "State Program",
+      "code": "STATE",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Case ready",
+      "code": "Case ready",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Not ground only portioned",
+      "code": "Not ground only portioned",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Reground product from official Est.",
+      "code": "Reground product from official Est.",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Primal subprimal boxed with COA",
+      "code": "Primal subprimal boxed with COA",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Sufficient grinding records",
+      "code": "Sufficient grinding records",
+      "active": false,
+      "sequence": 5
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Firm does not grind",
+      "code": "Firm does not grind",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Other (Explain in Additional Comments)",
+      "code": "Other (Explain in Additional Comments)",
+      "active": false,
+      "sequence": 7
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Quarterly sample collected at another location",
+      "code": "QSL",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Product not available",
+      "code": "PNA",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Sample previously collected at this location",
+      "code": "SPC",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Surveillance",
+      "domain": "No Sample Taken Reason",
+      "label": "Not applicable",
+      "code": "NA",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Allegation",
+      "code": "ALGT",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Consumer Complaint",
+      "code": "CNCP",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Custom Exempt Review",
+      "code": "CSXR",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Enforcement Follow-Up",
+      "code": "ENFU",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Foodborne Illness",
+      "code": "FOBI",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Industry Complaint",
+      "code": "INCP",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Investigation",
+      "code": "INVT",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "OIG Hotline Complaint",
+      "code": "OIGH",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Random",
+      "code": "RNDM",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Recall Effectiveness",
+      "code": "REFF",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Referral by Government Agency",
+      "code": "REGA",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Retail Project",
+      "code": "REPR",
+      "active": true,
+      "sequence": 12
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Routine",
+      "code": "ROTN",
+      "active": true,
+      "sequence": 13
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Sampling",
+      "code": "SMPL",
+      "active": false,
+      "sequence": 14
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Special Project",
+      "code": "SPRJ",
+      "active": true,
+      "sequence": 15
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Reason",
+      "label": "Other",
+      "code": "OTHR",
+      "active": true,
+      "sequence": 16
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Recommended Review Interval",
+      "label": "Yearly",
+      "code": "YEAR",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Recommended Review Interval",
+      "label": "Semi-Annually",
+      "code": "SEMI",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Recommended Review Interval",
+      "label": "Other",
+      "code": "OTHE",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Ground Beef Sample Collected",
+      "code": "GBC",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Grinding Log Verification",
+      "code": "GLV",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Retail Deli Checklist or Tool Completed",
+      "code": "RDCTC",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Special Project",
+      "code": "SP",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Other",
+      "code": "Other",
+      "active": false,
+      "sequence": 5
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "Custom Exempt Review",
+      "code": "CER",
+      "active": false,
+      "sequence": 6
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Retail Project",
+      "label": "OIG Hotline Complaint",
+      "code": "HC",
+      "active": false,
+      "sequence": 7
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Result",
+      "label": "Positive",
+      "code": "PO",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Result",
+      "label": "Negative",
+      "code": "NE",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Result",
+      "label": "Not Analyzed",
+      "code": "NA",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Result",
+      "label": "Results Pending",
+      "code": "RP",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Taken Types",
+      "label": "MT05",
+      "code": "MT05",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Taken Types",
+      "label": "MT06",
+      "code": "MT06",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Taken Types",
+      "label": "Special Project",
+      "code": "Special Project",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Sample Taken Types",
+      "label": "Investigative Sample",
+      "code": "Investigative Sample",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Shell Egg Temperatures",
+      "label": "In Compliance",
+      "code": "In Compliance",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Shell Egg Temperatures",
+      "label": "In Violation",
+      "code": "In Violation",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Special Project",
+      "label": "Quail 2019",
+      "code": "Q2019",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Young Chicken",
+      "code": "YCHK",
+      "active": true,
+      "sequence": 1
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Porcine",
+      "code": "PORC",
+      "active": true,
+      "sequence": 2
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Ovine",
+      "code": "OVIN",
+      "active": true,
+      "sequence": 3
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Caprine",
+      "code": "CAPR",
+      "active": true,
+      "sequence": 4
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Ducks",
+      "code": "DUCK",
+      "active": true,
+      "sequence": 5
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Geese",
+      "code": "GEES",
+      "active": true,
+      "sequence": 6
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Guinea",
+      "code": "GUIN",
+      "active": true,
+      "sequence": 7
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Mature Chicken",
+      "code": "MCHK",
+      "active": true,
+      "sequence": 8
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Calves",
+      "code": "CALV",
+      "active": true,
+      "sequence": 9
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Turkey",
+      "code": "TURK",
+      "active": true,
+      "sequence": 10
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Bovine",
+      "code": "BOVI",
+      "active": true,
+      "sequence": 11
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Ratites",
+      "code": "RATI",
+      "active": true,
+      "sequence": 12
+    },
+    {
+      "module": "Surveillance",
+      "domain": "Species",
+      "label": "Other",
+      "code": "OTHE",
+      "active": true,
+      "sequence": 13
+    }
+  ]

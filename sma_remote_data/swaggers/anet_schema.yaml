@@ -1,0 +1,4091 @@
+openapi: 3.0.1
+info:
+  title: rest-services
+  description: ANET In-Commerce System Smart Mobile Application
+  version: 1.0.0-SNAPSHOT
+servers:
+- url: https://icssma-dev.azurewebsites.us/assurancenet-sma
+  description: Generated server url
+paths:
+  /surveillance:
+    put:
+      tags:
+      - surveillance-controller
+      operationId: updateSurveillance
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Surveillance'
+        required: true
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Surveillance'
+      security:
+      - eauth: []
+    post:
+      tags:
+      - surveillance-controller
+      operationId: saveSurveillance
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Surveillance'
+        required: true
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Surveillance'
+      security:
+      - eauth: []
+  /firm/:
+    post:
+      tags:
+      - firm-controller
+      operationId: saveFirm
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/FirmInfo'
+        required: true
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/FirmInfo'
+      security:
+      - eauth: []
+  /attachment/reupload:
+    post:
+      tags:
+      - file-attachments-controller
+      operationId: reUploadFileAttachment
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+              - file
+              - fileAttachment
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                fileAttachment:
+                  $ref: '#/components/schemas/FileAttachmentMetadata'
+        required: true
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /attachment/retitle:
+    post:
+      tags:
+      - file-attachments-controller
+      operationId: reTitleFileAttachment
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              $ref: '#/components/schemas/FileAttachmentMetadata'
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /attachment/:
+    post:
+      tags:
+      - file-attachments-controller
+      operationId: createFileAttachment
+      parameters:
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              required:
+              - file
+              - fileAttachment
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+                fileAttachment:
+                  $ref: '#/components/schemas/FileAttachmentMetadata'
+        required: true
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /user/roles/all:
+    get:
+      tags:
+      - user-controller
+      operationId: getAllRoles
+      parameters:
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "roleID,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageANRole'
+      security:
+      - eauth: []
+  /user/all:
+    get:
+      tags:
+      - user-controller
+      operationId: getAllUsers
+      parameters:
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "empId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageUser'
+      security:
+      - eauth: []
+  /surveillance/{surveillanceId}:
+    get:
+      tags:
+      - surveillance-controller
+      operationId: getSurveillanceById
+      parameters:
+      - name: surveillanceId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Surveillance'
+      security:
+      - eauth: []
+    delete:
+      tags:
+      - surveillance-controller
+      operationId: deleteSurveillance
+      parameters:
+      - name: surveillanceId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /surveillance/after:
+    get:
+      tags:
+      - surveillance-controller
+      operationId: getSurveillancesModifiedAfter
+      parameters:
+      - name: date
+        in: query
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "lastModDate,ASC"
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageSurveillance'
+      security:
+      - eauth: []
+  /reminder/{reminderId}:
+    get:
+      tags:
+      - reminder-controller
+      operationId: getReminderById
+      parameters:
+      - name: reminderId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/Reminder'
+      security:
+      - eauth: []
+  /firm/{firmId}:
+    get:
+      tags:
+      - firm-controller
+      operationId: getFirmInfoById
+      parameters:
+      - name: firmId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/FirmInfo'
+      security:
+      - eauth: []
+  /firm/after:
+    get:
+      tags:
+      - firm-controller
+      operationId: getFirmsModifiedAfter
+      parameters:
+      - name: date
+        in: query
+        required: true
+        schema:
+          type: string
+          format: date-time
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "lastModDate,ASC"
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageFirmInfo'
+      security:
+      - eauth: []
+  /employee/{employeeId}:
+    get:
+      tags:
+      - employee-controller
+      operationId: getAllEmployeeRecordsForEmployee
+      parameters:
+      - name: employeeId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "employeeId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageEmployee'
+      security:
+      - eauth: []
+  /employee/roles/{employeeId}:
+    get:
+      tags:
+      - employee-controller
+      operationId: getAllEmployeeRolesForEmployee
+      parameters:
+      - name: employeeId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "empId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageEmployeeRole'
+      security:
+      - eauth: []
+  /employee/roles/all:
+    get:
+      tags:
+      - employee-controller
+      operationId: getAllEmployeeRoles
+      parameters:
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "empId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageEmployeeRole'
+      security:
+      - eauth: []
+  /employee/roles/active/{employeeId}:
+    get:
+      tags:
+      - employee-controller
+      operationId: getAllActiveEmployeeRolesForEmployee
+      parameters:
+      - name: employeeId
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int32
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "empId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageEmployeeRole'
+      security:
+      - eauth: []
+  /employee/all:
+    get:
+      tags:
+      - employee-controller
+      operationId: getAllEmployees
+      parameters:
+      - name: page
+        in: query
+        description: Zero-based page index (0..N)
+        required: false
+        schema:
+          minimum: 0
+          type: integer
+          default: 0
+      - name: size
+        in: query
+        description: The size of the page to be returned
+        required: false
+        schema:
+          minimum: 1
+          type: integer
+          default: 100
+      - name: sort
+        in: query
+        description: "Sorting criteria in the format: property,(asc|desc). Default\
+          \ sort order is ascending. Multiple sort criteria are supported."
+        required: false
+        schema:
+          type: array
+          items:
+            type: string
+          default:
+          - "employeeId,ASC"
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ModelPageEmployee'
+      security:
+      - eauth: []
+  /dropdown/us-states:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getAllState
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/State'
+      security:
+      - eauth: []
+  /dropdown/surveillance-reasons:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getSurveillanceReason
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/special-projects:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getSpecialProjectList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/shell-egg-temperature-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getShellEggTemperatureComplianceList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/sample-taken-types:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getSampleTakenTypes
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/sample-result-statuses:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getSampleResultStatuses
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/retail-projects:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getRetailProjectList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/registration-type-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getRegistrationTypeList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/registration-business-types:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getRegistrationInfoBusinessTypeList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/regional-grouping-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getRegionalGroupings
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/RegionalGrouping'
+      security:
+      - eauth: []
+  /dropdown/program-area-no-ofo-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getProgramAreaListExcludeOFO
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/program-area-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getProgramAreaList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/product-volumes:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getFirmProductVolumes
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/product-types-handled:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getProductTypes
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/organization-types:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getOrganizationTypes
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/organization-form-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getFormOrganizationList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/order-types:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getTypesOfOrder
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/oiea-regions:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getOIEARegions
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/no-sample-taken-reasons:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getNoSampleTakenReasons
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/frequency-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getFrequencyOfVisitList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/follow-up-date:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getFollowUpDateList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/FollowUpDateDTO'
+      security:
+      - eauth: []
+  /dropdown/firm-change-history-reasons:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getFirmChangeHistoryList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/county-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getAllCountyList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/StateCounty'
+      security:
+      - eauth: []
+  /dropdown/countries:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getAllCountry
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Country'
+      security:
+      - eauth: []
+  /dropdown/cer-species:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getCustomExemptReviewSpecies
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/cer-review-intervals:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getCustomExemptReviewReviewIntervals
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/business-types:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getBusinessTypes
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/business-natures:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getNatureOfBusinessList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /dropdown/business-activity-list:
+    get:
+      tags:
+      - drop-down-controller
+      operationId: getBusinessActivitiesList
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/DropdownElement'
+      security:
+      - eauth: []
+  /attachment/{contentId}/{docId}:
+    get:
+      tags:
+      - file-attachments-controller
+      operationId: getFileAttachment
+      parameters:
+      - name: contentId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: docId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/octet-stream:
+              schema:
+                $ref: '#/components/schemas/StreamingResponseBody'
+            application/json:
+              schema:
+                $ref: '#/components/schemas/StreamingResponseBody'
+      security:
+      - eauth: []
+  /attachment/all/{recordType}/{recordId}:
+    get:
+      tags:
+      - file-attachments-controller
+      operationId: getAllFileAttachments
+      parameters:
+      - name: recordType
+        in: path
+        required: true
+        schema:
+          type: string
+          enum:
+          - INVESTIGATION
+          - FIRM
+          - PRODUCTCONTROL
+          - SURVEILLANCE
+          - EQUIVALENCE
+          - EQUIVALENCE
+          - AER
+          - OPPED
+          - STAR
+          - IPPS
+          - EAROAA
+          - HAB
+          - HACCP
+          - FSA
+          - OPPS
+          - OFODA
+          - STATIC
+          - MISCONDUCTINV
+          - AUDIT
+      - name: recordId
+        in: path
+        required: true
+        schema:
+          type: integer
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ContentBean'
+      security:
+      - eauth: []
+    delete:
+      tags:
+      - file-attachments-controller
+      operationId: deleteAllFileAttachments
+      parameters:
+      - name: recordType
+        in: path
+        required: true
+        schema:
+          type: string
+          enum:
+          - INVESTIGATION
+          - FIRM
+          - PRODUCTCONTROL
+          - SURVEILLANCE
+          - EQUIVALENCE
+          - EQUIVALENCE
+          - AER
+          - OPPED
+          - STAR
+          - IPPS
+          - EAROAA
+          - HAB
+          - HACCP
+          - FSA
+          - OPPS
+          - OFODA
+          - STATIC
+          - MISCONDUCTINV
+          - AUDIT
+      - name: recordId
+        in: path
+        required: true
+        schema:
+          type: integer
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /firm/delete/{id}:
+    delete:
+      tags:
+      - firm-controller
+      operationId: deleteFirm
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: integer
+          format: int64
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+  /attachment/{contentId}/{documentId}:
+    delete:
+      tags:
+      - file-attachments-controller
+      operationId: deleteFileAttachment
+      parameters:
+      - name: contentId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: documentId
+        in: path
+        required: true
+        schema:
+          type: string
+      - name: assuranceNetRoleId
+        in: header
+        description: assuranceNetRoleId
+        required: true
+      - name: empId
+        in: header
+        description: empId
+        required: true
+      - name: regionCode
+        in: header
+        description: regionCode
+        required: true
+      - name: subRegionCode
+        in: header
+        description: subRegionCode
+        required: false
+      responses:
+        "500":
+          description: Internal Server Error
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "403":
+          description: Forbidden
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "404":
+          description: Not Found
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "400":
+          description: Bad Request
+          content:
+            '*/*':
+              schema:
+                $ref: '#/components/schemas/EntityResponse'
+        "200":
+          description: OK
+          content:
+            '*/*':
+              schema:
+                type: string
+      security:
+      - eauth: []
+components:
+  schemas:
+    EntityResponse:
+      type: object
+      properties:
+        statusCode:
+          type: integer
+          format: int32
+        data:
+          type: object
+        errors:
+          type: object
+    Surveillance:
+      type: object
+      properties:
+        surveillanceId:
+          type: integer
+          format: int64
+        firmID:
+          type: integer
+          format: int64
+        datePerf:
+          type: string
+          format: date-time
+        meatCheck:
+          type: string
+        poultryCheck:
+          type: string
+        eggCheck:
+          type: string
+        shellEggCheck:
+          type: string
+        siluriformesFishCheck:
+          type: string
+        nonAmenableCheck:
+          type: string
+        sampleType:
+          type: string
+        sampleResult:
+          type: string
+        followUpDate:
+          type: string
+        followUpReason:
+          type: string
+        firmRepresentative1:
+          type: string
+        firmRepresentativeTitle1:
+          type: string
+          writeOnly: true
+        firmRepresentative2:
+          type: string
+        firmRepresentativeTitle2:
+          type: string
+        freqNum:
+          type: string
+        pestCompany:
+          type: string
+        createdDate:
+          type: string
+          format: date-time
+        createdEmpId:
+          type: integer
+          format: int32
+        lastModDate:
+          type: string
+          format: date-time
+        lastModEmpId:
+          type: integer
+          format: int32
+        supervisorReviewed:
+          type: string
+        foodDefensePlan:
+          type: string
+        emergencyContactInfo:
+          type: string
+        outsideSurveillanceSystem:
+          type: string
+        insideSurveillanceSystem:
+          type: string
+        proceduresForAuthorizedPersons:
+          type: string
+        storageProceduresForHazardousMaterials:
+          type: string
+        proceduresToProtectFood:
+          type: string
+        shippingReceivingAreasRestricted:
+          type: string
+        incomingShippingDocuments:
+          type: string
+        freeFromTampering:
+          type: string
+        productsWholesome:
+          type: string
+        sanitaryConditionsGood:
+          type: string
+        hazardousControlsAdequate:
+          type: string
+        nonHumanFoodDenatured:
+          type: string
+        recordsMaintained:
+          type: string
+        productsNotMisbranded:
+          type: string
+        complianceWithTermsAndConditions:
+          type: string
+        checkForFederalImportInspection:
+          type: string
+        correctDocumentsRequested:
+          type: string
+        checkForShippingMark:
+          type: string
+        phisVerifyForeignCountries:
+          type: string
+        phisVerifyForeignEstablishmentsEligible:
+          type: string
+        phisVerifyFSISInspection:
+          type: string
+        sampleTaken:
+          type: string
+        sampleFromPreviousSample:
+          type: string
+        ecoliSampleTaken:
+          type: string
+        didDetentionOccur:
+          type: string
+        securityVulnerabilitiesDiscussed:
+          type: string
+        form5420Provided:
+          type: string
+        followUpRequired:
+          type: string
+        followUpFromPrevious:
+          type: string
+        investigatorMetWithRepresentative:
+          type: string
+        pestControlVisits:
+          type: string
+        followUpCompleted:
+          type: string
+        followUpCompletedDate:
+          type: string
+          format: date-time
+        phisVerifyForeignEstablishments:
+          type: string
+        procedureForProductTampering:
+          type: string
+        followUpDeadlineDate:
+          type: string
+          format: date-time
+        createdEmpName:
+          type: string
+        firmNameAtTimeOfAction:
+          type: string
+        lockEmpId:
+          type: integer
+          format: int32
+        workflowId:
+          type: number
+        workflowStateId:
+          type: number
+        office:
+          type: string
+        productRecordsAccordingToFoodSafetyActs:
+          type: string
+        empLocation:
+          type: string
+        empSubLocation:
+          type: string
+        respIndvInComp:
+          type: string
+        shellEggTemperature:
+          type: string
+        areShellEggsPropMain:
+          type: string
+        hasChangeHistory:
+          type: string
+        handlesImportedProducts:
+          type: string
+        numMTSamples:
+          type: integer
+          format: int32
+        numSplProjInvSamples:
+          type: integer
+          format: int32
+        noSampleTakenInfo:
+          type: string
+        firmGrindingRec:
+          type: string
+        reviewerSupv:
+          type: integer
+          format: int32
+        fileAttached:
+          type: string
+        reason:
+          type: string
+        nutritionalLabelingVerify:
+          type: string
+        didReferSurvFindings:
+          type: string
+        referralComments:
+          type: string
+        invoiceNbr:
+          type: string
+        billofLadingNbr:
+          type: string
+        getaPHISPermitNbr:
+          type: string
+        gethTSCode:
+          type: string
+        customEntryNbr:
+          type: string
+        totalCases:
+          type: integer
+          format: int32
+        unitType:
+          type: string
+        foreignProducerEstNbr:
+          type: string
+        brokerFirmID:
+          type: integer
+          format: int32
+        sampleLabFormNbr:
+          type: string
+        detainedDisposition:
+          type: string
+        detainedDispositionDet:
+          type: string
+        recallDisposition:
+          type: string
+        recallDispositionDet:
+          type: string
+        getfTPInitiatedDate:
+          type: string
+          format: date-time
+        getfTPDisposition:
+          type: string
+        getfTPDispositionDet:
+          type: string
+        getoIGInvestigation:
+          type: string
+        getoIGInvestigationInitiatedBy:
+          type: string
+        getoIGInvestigationDate:
+          type: string
+          format: date-time
+        retailProject:
+          type: string
+        retailProjectOther:
+          type: string
+        retailSpecialProject:
+          type: string
+        isNewFormat:
+          type: string
+        verifyDriverIdentification:
+          type: string
+        tier3Retail:
+          type: string
+        logToIdentify:
+          type: string
+        importProdObserve:
+          type: boolean
+        phisUsedVerifyProducts:
+          type: string
+        primaryBusinessTypeAtTimeOfAction:
+          type: string
+        productVolumeAtTimeOfAction:
+          type: string
+        tierAtTimeOfAction:
+          type: string
+        wasFoodDefenseConducted:
+          type: boolean
+        title:
+          type: string
+        wereShellEggsObserved:
+          type: boolean
+        foodDefenseInvestigatorId:
+          type: integer
+          format: int64
+        surveillanceShellEggTemperatures:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceShellEggTemperature'
+        surveillanceChangeHistories:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceChangeHistory'
+        surveillanceComments:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceComment'
+        surveillanceUnlimitedComments:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceUnlimitedComments'
+        surveillanceImpProdCountries:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceImpProdCountry'
+        surveillanceQuestions:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/SurveillanceQuestion'
+        productControls:
+          uniqueItems: true
+          type: array
+          items:
+            type: integer
+            format: int32
+        firmRepresentativeRepTitle1:
+          type: string
+        storProceduresHazMat:
+          type: string
+          writeOnly: true
+        maintainingSecurityDuringShip:
+          type: string
+        empLococation:
+          type: string
+          writeOnly: true
+    SurveillanceChangeHistory:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        changeDate:
+          type: string
+          format: date-time
+        changeUserID:
+          type: integer
+          format: int32
+        changeDesc:
+          type: string
+    SurveillanceComment:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        commentsType:
+          type: string
+        comments:
+          type: string
+    SurveillanceImpProdCountry:
+      type: object
+      properties:
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        countryCode:
+          type: string
+    SurveillanceQuestion:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        answer:
+          type: string
+        questionLabel:
+          type: string
+        questionSeqNum:
+          type: integer
+          format: int32
+        headerType:
+          type: string
+        comments:
+          type: string
+        headerLabel:
+          type: string
+        headerSeqNum:
+          type: integer
+          format: int32
+    SurveillanceShellEggTemperature:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        storageType:
+          type: string
+        alias:
+          type: string
+        temperature1:
+          type: number
+        temperature2:
+          type: number
+        temperature3:
+          type: number
+        temperature4:
+          type: number
+        temperature5:
+          type: number
+        avgTemperature:
+          type: number
+    SurveillanceUnlimitedComments:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int32
+        surveillance:
+          $ref: '#/components/schemas/Surveillance'
+        commentsType:
+          type: string
+        comments:
+          type: string
+    ContactInfo:
+      type: object
+      properties:
+        contactInfoId:
+          type: integer
+          format: int64
+        contactName:
+          type: string
+        contactTitle:
+          type: string
+        contactPhoneNum:
+          type: string
+        contactPhoneNumExtn:
+          type: string
+        contactMobileNum:
+          type: string
+        receiveTextMessage:
+          type: string
+        contactFaxNum:
+          type: string
+        contactEmail:
+          type: string
+    FirmChangeHistory:
+      type: object
+      properties:
+        changeRecId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        changeUserId:
+          type: integer
+          format: int32
+        changeDate:
+          type: string
+          format: date-time
+        changeDesc:
+          type: string
+        changeReason:
+          type: string
+    FirmComments:
+      type: object
+      properties:
+        commentsId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        commentType:
+          type: string
+        text:
+          type: string
+    FirmInfo:
+      type: object
+      properties:
+        firmId:
+          type: integer
+          format: int64
+        name:
+          type: string
+        doingBusAs:
+          type: string
+        alsoKnownAs:
+          type: string
+        prevName:
+          type: string
+        address1:
+          type: string
+        address2:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        zipCode:
+          type: string
+        county:
+          type: string
+        isMailEqlFirm:
+          type: string
+        mailAddress1:
+          type: string
+        mailAddress2:
+          type: string
+        mailCity:
+          type: string
+        mailState:
+          type: string
+        mailZipCode:
+          type: string
+        mailCounty:
+          type: string
+        estNum:
+          type: string
+        risk:
+          type: string
+        regionCode:
+          type: string
+        subRegionCode:
+          type: string
+        assignCode:
+          type: string
+        numFloors:
+          type: string
+        apxSqFoot:
+          type: string
+        apxNumEmployees:
+          type: string
+        isFormAttached:
+          type: string
+        primaryBusType:
+          type: string
+        secondaryBusType:
+          type: string
+        tertiaryBusType:
+          type: string
+        businessActivities:
+          type: string
+        monOpenTime:
+          type: string
+        monCloseTime:
+          type: string
+        isMonClosed:
+          type: string
+        tueOpenTime:
+          type: string
+        tueCloseTime:
+          type: string
+        isTueClosed:
+          type: string
+        wedOpenTime:
+          type: string
+        wedCloseTime:
+          type: string
+        isWedClosed:
+          type: string
+        thuOpenTime:
+          type: string
+        thuCloseTime:
+          type: string
+        isThuClosed:
+          type: string
+        friOpenTime:
+          type: string
+        friCloseTime:
+          type: string
+        isFriClosed:
+          type: string
+        satOpenTime:
+          type: string
+        satCloseTime:
+          type: string
+        isSatClosed:
+          type: string
+        sunOpenTime:
+          type: string
+        sunCloseTime:
+          type: string
+        isSunClosed:
+          type: string
+        dateOwnerChanged:
+          type: string
+          format: date-time
+        countryOrigin:
+          type: string
+        firstManSameAsOwner:
+          type: boolean
+        orgSameAsFirmName:
+          type: boolean
+        orgSameAsPhysicalAddress:
+          type: boolean
+        orgSameAsMailAddress:
+          type: boolean
+        orgName:
+          type: string
+        orgType:
+          type: string
+        orgAddress1:
+          type: string
+        orgAddress2:
+          type: string
+        orgCity:
+          type: string
+        orgState:
+          type: string
+        orgZipCode:
+          type: string
+        orgCounty:
+          type: string
+        isMeatHandled:
+          type: string
+        isPoultryHandled:
+          type: string
+        isEggsHandled:
+          type: string
+        isSiluriformesFishHandled:
+          type: string
+        isOtherHandled:
+          type: string
+        otherProduct:
+          type: string
+        isDomestic:
+          type: string
+        isImported:
+          type: string
+        volumeProduct:
+          type: string
+        createdDate:
+          type: string
+          format: date-time
+        createdEmpId:
+          type: integer
+          format: int32
+        lastModDate:
+          type: string
+          format: date-time
+        lastModEmpId:
+          type: integer
+          format: int32
+        contactRegionalOffice:
+          type: string
+        contactRegionalOfficeComment:
+          type: string
+        workflowStateId:
+          type: integer
+          format: int64
+        workflowRecordId:
+          type: integer
+          format: int64
+        isOrderPermanent:
+          type: string
+        isDeleteFirmReq:
+          type: string
+        isEnergySource:
+          type: string
+        exprOrderDate:
+          type: string
+          format: date-time
+        lastSurvDate:
+          type: string
+          format: date-time
+        isOpenInv:
+          type: string
+        hasChangeHistory:
+          type: string
+        fileAttached:
+          type: string
+        complianceAttached:
+          type: string
+        firmPrevOwnerships:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmPrevOwnership'
+        firmComments:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmComments'
+        firmChangeHistory:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmChangeHistory'
+        firmInfoCountries:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmInfoCountries'
+        pestControlHistory:
+          uniqueItems: true
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmPestControlHistory'
+        firmRegistrationInfo:
+          $ref: '#/components/schemas/FirmRegistrationInfo'
+        owner:
+          $ref: '#/components/schemas/ContactInfo'
+        firstManager:
+          $ref: '#/components/schemas/ContactInfo'
+        secondManager:
+          $ref: '#/components/schemas/ContactInfo'
+        pestControl:
+          $ref: '#/components/schemas/PestControl'
+        associatedFirmLinks:
+          uniqueItems: true
+          type: array
+          items:
+            type: integer
+            format: int64
+    FirmInfoCountries:
+      type: object
+      properties:
+        firmInfo:
+          $ref: '#/components/schemas/FirmInfo'
+        countryCode:
+          type: string
+    FirmPestControlHistory:
+      type: object
+      properties:
+        firmPestControlHistoryId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        createdDate:
+          type: string
+          format: date-time
+        createdBy:
+          type: integer
+          format: int32
+        changeDate:
+          type: string
+          format: date-time
+        fieldName:
+          type: string
+        newValue:
+          type: string
+        previousValue:
+          type: string
+    FirmPrevOwnership:
+      type: object
+      properties:
+        firmPrevOwnId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        firmPrevOwnName:
+          type: string
+        prevOwnDate:
+          type: string
+          format: date-time
+    FirmRegistrationInfo:
+      type: object
+      properties:
+        firmId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        isOriginal:
+          type: string
+        regDate:
+          type: string
+          format: date-time
+        regName:
+          type: string
+        regTradeNames:
+          type: string
+        regMailAddress:
+          type: string
+        regState:
+          type: string
+        phoneEmail:
+          type: string
+        regType:
+          type: string
+        certifyOffical:
+          type: string
+        formOfOrg:
+          type: string
+        othFormOfOrg:
+          type: string
+        natureOfBusiness:
+          type: string
+        othNatOfBusiness:
+          type: string
+        regBusinessType:
+          type: string
+        othRgtrBusType:
+          type: string
+        regComment:
+          type: string
+        isRegistered:
+          type: string
+        regNumber:
+          type: string
+        linkedDate:
+          type: string
+          format: date-time
+        parentFirmId:
+          type: string
+        parentFirmName:
+          type: string
+        associatedFirmLinks:
+          uniqueItems: true
+          type: array
+          items:
+            type: integer
+            format: int64
+    PestControl:
+      type: object
+      properties:
+        pestControlId:
+          type: integer
+          format: int64
+        firm:
+          $ref: '#/components/schemas/FirmInfo'
+        name:
+          type: string
+        address1:
+          type: string
+        address2:
+          type: string
+        city:
+          type: string
+        state:
+          type: string
+        zipCode:
+          type: string
+        phoneNumber:
+          type: string
+        phoneNumberExtension:
+          type: string
+        mobilePhoneNumber:
+          type: string
+        email:
+          type: string
+        selfAdministered:
+          type: boolean
+        frequencyOfVisits:
+          type: string
+    FileAttachmentMetadata:
+      required:
+      - contentId
+      - fileType
+      - recordId
+      - recordType
+      - title
+      type: object
+      properties:
+        title:
+          type: string
+        recordId:
+          type: integer
+        recordType:
+          type: string
+          enum:
+          - INVESTIGATION
+          - FIRM
+          - PRODUCTCONTROL
+          - SURVEILLANCE
+          - EQUIVALENCE
+          - EQUIVALENCE
+          - AER
+          - OPPED
+          - STAR
+          - IPPS
+          - EAROAA
+          - HAB
+          - HACCP
+          - FSA
+          - OPPS
+          - OFODA
+          - STATIC
+          - MISCONDUCTINV
+          - AUDIT
+        fileType:
+          type: string
+          enum:
+          - EVIDENCE
+          - GENERIC
+          - COMPLIANCE
+        contentId:
+          type: string
+    ANRole:
+      type: object
+      properties:
+        roleID:
+          type: integer
+          format: int32
+        roleName:
+          type: string
+        roleType:
+          type: string
+    ModelPageANRole:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/ANRole'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    ModelPageUser:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/User'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    User:
+      type: object
+      properties:
+        eauthId:
+          type: string
+        empId:
+          type: integer
+          format: int32
+        userLevel:
+          type: integer
+          format: int32
+    ModelPageSurveillance:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/Surveillance'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    Reminder:
+      type: object
+      properties:
+        remindersId:
+          type: integer
+          format: int64
+        recordID:
+          type: integer
+          format: int64
+        type:
+          type: string
+        creator:
+          type: integer
+          format: int64
+        createdDate:
+          type: string
+          format: date-time
+        firmName:
+          type: string
+        empId:
+          type: integer
+          format: int64
+        empName:
+          type: string
+        followUp:
+          type: string
+        dueDate:
+          type: string
+          format: date-time
+        variance:
+          type: string
+    ModelPageFirmInfo:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/FirmInfo'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    Employee:
+      type: object
+      properties:
+        id:
+          type: string
+        employeeId:
+          type: integer
+          format: int64
+        lastName:
+          type: string
+        firstName:
+          type: string
+        loginName:
+          type: string
+        title:
+          type: string
+        districtCode:
+          type: string
+        districtName:
+          type: string
+        circuitCode:
+          type: string
+        circuitName:
+          type: string
+        establishmentId:
+          type: integer
+          format: int64
+        establishmentCode:
+          type: string
+        establishmentName:
+          type: string
+        regionCode:
+          type: string
+        regionName:
+          type: string
+        subRegionCode:
+          type: string
+        assignmentCode:
+          type: string
+        assignmentLocation:
+          type: string
+        programArea:
+          type: string
+        email:
+          type: string
+        active:
+          type: string
+        badgeNumber:
+          type: string
+        phoneNumber:
+          type: string
+    ModelPageEmployee:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/Employee'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    EmployeeRole:
+      type: object
+      properties:
+        empId:
+          type: integer
+          format: int32
+        assuranceNetRoleId:
+          type: integer
+          format: int32
+        workflowRoleId:
+          type: number
+        isPrimary:
+          type: string
+        startDate:
+          type: string
+          format: date-time
+        endDate:
+          type: string
+          format: date-time
+        districtCode:
+          type: string
+        assignmentCode:
+          type: string
+        employeeRoleId:
+          type: integer
+          format: int64
+        regionCode:
+          type: string
+        subRegionCode:
+          type: string
+    ModelPageEmployeeRole:
+      type: object
+      properties:
+        records:
+          type: array
+          items:
+            $ref: '#/components/schemas/EmployeeRole'
+        page:
+          type: integer
+          format: int32
+        count:
+          type: integer
+          format: int32
+        totalPages:
+          type: integer
+          format: int32
+        totalRecords:
+          type: integer
+          format: int64
+    State:
+      type: object
+      properties:
+        fullName:
+          type: string
+        shortName:
+          type: string
+    DropdownElement:
+      type: object
+      properties:
+        code:
+          type: string
+        label:
+          type: string
+        description:
+          type: string
+        sequence:
+          type: integer
+          format: int32
+        elementDomain:
+          type: string
+        moduleName:
+          type: string
+        active:
+          type: boolean
+    RegionalGrouping:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        subRegionName:
+          type: string
+        subRegionCode:
+          type: string
+        assignmentName:
+          type: string
+        assignmentCode:
+          type: string
+        regionName:
+          type: string
+        regionCode:
+          type: string
+    FollowUpDateDTO:
+      type: object
+      properties:
+        label:
+          type: string
+        value:
+          type: string
+    StateCounty:
+      type: object
+      properties:
+        state:
+          type: string
+        county:
+          type: string
+        assignCode:
+          type: string
+        regionCode:
+          type: string
+        fipsCode:
+          type: integer
+          format: int64
+    Country:
+      type: object
+      properties:
+        shortName:
+          type: string
+        full:
+          type: string
+    StreamingResponseBody:
+      type: object
+    ContentBean:
+      type: object
+      properties:
+        docId:
+          type: string
+        contentId:
+          type: string
+        title:
+          type: string
+        author:
+          type: string
+        securityGroup:
+          type: string
+        securityAccount:
+          type: string
+        revision:
+          type: string
+        comments:
+          type: string
+        releaseState:
+          type: string
+        releaseDate:
+          type: string
+          format: date-time
+        expirationDate:
+          type: string
+          format: date-time
+        revisionLabel:
+          type: string
+        fileName:
+          type: string
+        fileExtension:
+          type: string
+        documentType:
+          type: string
+        mimeType:
+          type: string
+        fileSize:
+          type: string
+        fileSizeBytes:
+          type: integer
+          format: int64
+        createDate:
+          type: string
+        parentContent:
+          type: string
+        keywords:
+          type: string
+        relatedContent:
+          type: string
+        markedDelete:
+          type: boolean
+        reUpload:
+          type: boolean
+        expire:
+          type: boolean
+        inputStream:
+          type: object
+        markedRender:
+          type: boolean
+        docNameEncoded:
+          type: string
+        docURL:
+          type: string
+        docURLEncoded:
+          type: string
+  securitySchemes:
+    eauth:
+      type: apiKey
+      name: Authorization
+      in: header

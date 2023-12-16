@@ -1,0 +1,8 @@
+name: sma_local_data
+
+packages:
+  - packages/*
+
+scripts:
+  watch:
+    exec: flutter clean && dart pub run build_runner watch --delete-conflicting-outputs

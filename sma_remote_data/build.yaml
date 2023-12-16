@@ -1,0 +1,31 @@
+targets:
+  $default:
+    sources:
+      - swaggers/**
+      - lib/**
+    builders:
+      chopper_generator:
+        options:
+          header: "//Generated code - DO NOT edit directly. Edit Swagger file then generate."
+      swagger_dart_code_generator:
+        options:
+          input_folder: "swaggers/"
+          output_folder: "lib/src/anet_apis/"
+          with_base_url: true
+          with_converter: true
+          use_path_for_request_names: true
+          use_default_null_for_lists: false
+          override_equals_and_hashcode: true
+          build_only_models: false
+          additional_headers:
+            - "Authorization"
+            - "Cache-Control"
+          separate_models: true
+          enums_case_sensitive: false
+          cut_from_model_names: "ModelRenameV3"
+          nullable_models:
+            - "Firm"
+            - "Surveillance"
+          ignore_headers: false
+          use_required_attribute_for_headers: false
+          include_if_null: false

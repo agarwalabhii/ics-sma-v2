@@ -1,0 +1,4 @@
+# melos_managed_dependency_overrides: sma_local_data
+dependency_overrides:
+  sma_local_data:
+    path: ../sma_local_data/

@@ -1,0 +1,8 @@
+name: sma_common_ux_workspace
+
+packages:
+  - packages/*
+
+scripts:
+  watch:
+    exec: dart pub get; flutter clean; dart pub run build_runner watch --delete-conflicting-outputs

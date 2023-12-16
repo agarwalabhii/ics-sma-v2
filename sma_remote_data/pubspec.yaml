@@ -1,0 +1,60 @@
+name: sma_remote_data
+description: SMA Remote Data
+
+publish_to: 'none'
+version: 1.0.1-0000
+# Version 
+# + means it is a regular release build,
+# while - would indicate a pre-release build.
+# (No build number after x.y.z also indicates a release build like +)
+
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+  flutter: ">=3.1.0"
+  
+dependencies:
+  chopper: ^7.0.5
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.3.6
+  freezed: ^2.4.5
+  hooks_riverpod: ^2.4.1
+  http: ^1.1.0
+  json_annotation: ^4.8.1
+  logging: ^1.0.0
+  riverpod_annotation: ^2.1.1
+  shared_preferences: ^2.0.20
+  sma_local_data:
+    git:
+      url: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_local_data
+      ref: master
+
+dev_dependencies:
+  build_runner : ^2.3.3
+  chopper_generator: ^7.0.2
+  custom_lint: ^0.5.3
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.6.1
+  melos: ^3.2.0
+  msix: ^3.13.2
+  riverpod_generator: ^2.3.2
+  riverpod_lint: ^2.0.3
+  swagger_dart_code_generator: ^2.10.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+targets:
+  $default:
+    sources:
+      - swaggers/** 
+    builders:
+      swagger_dart_code_generator:
+
+dependency_overrides:
+  sma_local_data:
+    path: ../sma_local_data/

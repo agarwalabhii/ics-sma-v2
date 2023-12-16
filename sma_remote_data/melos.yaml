@@ -1,0 +1,9 @@
+name: sma_remote_data_workspace
+
+packages:
+  - ../sma_local_data/
+  - packages/*
+
+scripts:
+  watch:
+    exec: flutter clean && dart pub run build_runner watch --delete-conflicting-outputs

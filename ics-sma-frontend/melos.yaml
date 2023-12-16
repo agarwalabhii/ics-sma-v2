@@ -1,0 +1,13 @@
+name: ics_sma_frontend
+
+packages:
+  - ../sma_local_data/
+  - ../sma_remote_data/
+  - ../sma_common_ux/
+  - packages/*
+
+scripts:
+  build:
+    exec: flutter pub run build_runner build --delete-conflicting-outputs
+  watch:
+    exec: flutter pub run build_runner watch --delete-conflicting-outputs

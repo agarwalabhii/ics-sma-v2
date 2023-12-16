@@ -1,0 +1,1213 @@
+{
+  "create_feature_label": "{feature} (New)",
+  "@create_feature_label": {
+    "description": "{feature} (New)",
+    "placeholders": {
+      "feature": {
+        "type": "String",
+        "example": "Firm"
+      }
+    }
+  },
+  "edit_feature_label": "{feature} (Edit)",
+  "@edit_feature_label": {
+    "description": "{feature} (Edit)",
+    "placeholders": {
+      "feature": {
+        "type": "String",
+        "example": "Firm"
+      }
+    }
+  },
+  "view_feature_label": "{feature} (View)",
+  "@view_feature_label": {
+    "description": "{feature} (View)",
+    "placeholders": {
+      "feature": {
+        "type": "String",
+        "example": "Firm"
+      }
+    }
+  },
+  "submit": "Submit",
+  "@submit": {
+    "description": "Submit"
+  },
+  "publish": "Publish",
+  "@publish": {
+    "description": "Publish"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel"
+  },
+  "save": "Save Draft",
+  "@save": {
+    "description": "Save Draft"
+  },
+  "general_info": "General Information",
+  "@general_info": {
+    "description": "General Information"
+  },
+  "food_defense": "Food Defense",
+  "@food_defense": {
+    "description": "Food Defense"
+  },
+  "food_safety": "Food Safety",
+  "@food_safety": {
+    "description": "Food Safety"
+  },
+  "addional_info": "Additional Information",
+  "@addional_info": {
+    "description": "Additional Information"
+  },
+  "sampling_info": "Sampling Information",
+  "@sampling_info": {
+    "description": "Sampling Information"
+  },
+  "date_performed_label": "Date Performed",
+  "@date_performed_label": {
+    "description": "Date Performed"
+  },
+  "products_wholesome_label": "Are all meat, poultry, Siluriformes fish, shell eggs or egg products wholesome and not adulterated?",
+  "@products_wholesome_label": {
+    "description": "Products Wholesome"
+  },
+  "sanitary_conditions_good_label": "Are sanitary conditions such that meat, poultry, Siluriformes fish, shell eggs or egg products will not become contaminated with filth or rendered injurious to health?",
+  "@sanitary_conditions_good_label": {
+    "description": "Sanitary Conditions Good"
+  },
+  "hazard_controls_adequate_label": "Are hazard controls adequate to prevent meat, poultry, Siluriformes fish, shell eggs or egg products from becoming adulterated?",
+  "@hazard_controls_adequate_label": {
+    "description": "Hazard Controls Adequate"
+  },
+  "non_human_food_properly_denatured": "Are all meat, poultry, Siluriformes fish, shell eggs or egg products not intended for use as human food properly denatured or otherwise made inedible as prescribed by the regulations?",
+  "@non_human_food_properly_denatured": {
+    "description": "Non human food properly denatured"
+  },
+  "records_maintained_label": "Are all records kept and maintained in a manner that fully and correctly discloses all transactions involved in the business activity that is subject to the provisions of the Acts?",
+  "@records_maintained_label": {
+    "description": "Records maintaned"
+  },
+  "meet_with_firm_rep_label": "Did the investigator meet with a firm representative?",
+  "@meet_with_firm_rep_label": {
+    "description": "Did the investigator meet with a firm representative?"
+  },
+  "rep_1_title_label": "Representative 1 Title",
+  "@rep_1_title_label": {
+    "description": "Representative 1 Title"
+  },
+  "rep_1_name_label": "Representative 1 Name",
+  "@rep_1_name_label": {
+    "description": "Representative 1 Name"
+  },
+  "rep_2_title_label": "Representative 2 Title",
+  "@rep_2_title_label": {
+    "description": "Representative 2 Title"
+  },
+  "rep_2_name_label": "Representative 2 Name",
+  "@rep_2_name_label": {
+    "description": "Representative 2 Name"
+  },
+  "refer_findings_label": "Did the investigator refer their surveillance findings to other federal or state agencies?",
+  "@refer_findings_label": {
+    "description": "Did the investigator refer their surveillance findings to other federal or state agencies?"
+  },
+  "comments_referral_label": "Referral Comments",
+  "@comments_referral_label": {
+    "description": "Referral Comments"
+  },
+  "follow_up_required_label": "Is a follow up required for the surveillance?",
+  "@follow_up_required_label": {
+    "description": ""
+  },
+  "follow_up_in_label": "Follow up in",
+  "@follow_up_in_label": {
+    "description": "Follow up in"
+  },
+  "follow_up_previous_label": "Is this a follow up from a previous Food Defense or Surveillance review?",
+  "@follow_up_previous_label": {
+    "description": "Is this a follow up from a previous Food Defense or Surveillance review?"
+  },
+  "follow_up_comments_label": "Follow up comments",
+  "@follow_up_comments_label": {
+    "description": "Follow up comments"
+  },
+  "additional_comments_label": "Additional Comments",
+  "@additional_comments_label": {
+    "description": "Additionals Comments"
+  },
+  "search_search_label": "Search",
+  "@search_search_label": {
+    "description": "Search"
+  },
+
+  "emergency_contact_information_label": "Is there emergency contact information?",
+  "@emergency_contact_information_label": {
+    "description": "Is there emergency contact information?"
+  },
+  "food_defense_measures_inside_facility_label": "Does the facility have food defense measures in place for the inside of the facility (e.g., cameras, security guards, lighting, alarm system, controlled access system, and/or locks)?",
+  "@food_defense_measures_inside_facility_label": {
+    "description": "Does the facility have food defense measures in place for the inside of the facility (e.g., cameras, security guards, lighting, alarm system, controlled access system, and/or locks)?"
+  },
+  "authorized_persons_on_premises_procedures_label": "Are there procedures in place to ensure that all persons in the firm are authorized and properly identified when on premises?",
+  "@authorized_persons_on_premises_procedures_label": {
+    "description": "Are there procedures in place to ensure that all persons in the firm are authorized and properly identified when on premises?"
+  },
+  "use_and_storage_hazardous_materials_label": "Are there use and storage procedures for any hazardous materials in the firm to preclude product adulteration?",
+  "@use_and_storage_hazardous_materials_label": {
+    "description": "Are there use and storage procedures for any hazardous materials in the firm to preclude product adulteration?"
+  },
+  "record_of_all_visitors_label": "Does the firm keep a record of all visitors? (e.g. log)",
+  "@record_of_all_visitors_label": {
+    "description": "Does the firm keep a record of all visitors? (e.g. log)"
+  },
+  "shipping_receiveing_authorized_personnel_label": "Is access to shipping/receiving area(s) restricted to authorized personnel?",
+  "@shipping_receiveing_authorized_personel_label": {
+    "description": "Is access to shipping/receiving area(s) restricted to authorized personnel?"
+  },
+  "shipping_incoming_consistant_documents_label": "Is there a procedure to verify that incoming/shipping products are consistent with shipping documents?",
+  "@shipping_incoming_consistant_documents_label": {
+    "description": "Is there a procedure to verify that incoming/shipping products are consistent with shipping documents?"
+  },
+  "procedure_observe_incoming_products_tampering_label": "Is there a procedure to observe incoming products for indication of tampering?",
+  "@procedure_observe_incoming_products_tampering_label": {
+    "description": "Is there a procedure to observe incoming products for indication of tampering?"
+  },
+  "procedure_maintaining_security_products_label": "Is there a procedure for maintaining security of products during loading/shipment?",
+  "@procedure_maintaining_security_products_label": {
+    "description": "Is there a procedure for maintaining security of products during loading/shipment?"
+  },
+  "detention_occur_label": "Did a detention occur?",
+  "@detention_occur_label": {
+    "description": "Did a detention occur?"
+  },
+  "security_vulnerabilities_discussed_label": "Have all identified security vulnerabilities been discussed with management?",
+  "@security_vulnerabilities_discussed_label": {
+    "description": "Have all identified security vulnerabilities been discussed with management?"
+  },
+  "fsis_5420_3_provided_label": "Was the FSIS form 5420-3 provided to the firm?",
+  "@fsis_5420_3_provided_label": {
+    "description": "Was the FSIS form 5420-3 provided to the firm?"
+  },
+  "products_free_from_tampering_label": "Were all products observed free from apparent tampering or adulteration?",
+  "@products_free_from_tampering_label": {
+    "description": "Were all products observed free from apparent tampering or adulteration?"
+  },
+  "exit_notes_label": "Exit Notes",
+  "@exit_notes_label": {
+    "description": "Exit Notes"
+  },
+  "firm_id_lookup_label": "Firm ID",
+  "@firm_id_lookup": {
+    "description": "Firm ID"
+  },
+  "firm_lookup_label": "Firm Look Up",
+  "@firm_lookup": {
+    "description": "Firm Look Up"
+  },
+  "firm_name_label": "Firm Name",
+  "@firm_name": {
+    "description": "Firm Name"
+  },
+  "address_label": "Address",
+  "@address": {
+    "description": "Address"
+  },
+  "city_label": "City",
+  "@city": {
+    "description": "City"
+  },
+  "products_observed_label": "Products Observed",
+  "@products_observed_label": {
+    "description": "Products Observed"
+  },
+  "firm_additional_regulatory_agency_label": "Other Regulatory Agency Contact Information",
+  "@firm_additional_regulatory_agency_label": {
+    "description": "Other Regulatory Agency Contact Information"
+  },
+
+  "food_defense_observed_label": "Was a Food Defense conducted?",
+  "@food_defense_observed_label": {
+    "description": "Was a Food Defense conducted?"
+  },
+  "types_observed_label": "Types of products observed?",
+  "@types_observed_label": {
+    "description": "Types of products observed?"
+  },
+  "written_plan_label": "Is there a written Food Defense Plan?",
+  "@written_plan_label": {
+    "description": "Is there a written Food Defense Plan?"
+  },
+  "emergency_conact_label": "Is there emergency contact information?",
+  "@emergency_conact_label": {
+    "description": "Is there emergency contact information?"
+  },
+  "outer_perimeter_protect_label": "Does the facility have food defense measures to protect the outer perimeter and/or outside premises of the facility (e.g., cameras, security guards, fencing, lighting, alarm system, controlled access system, and/or locks)?",
+  "@outer_perimeter_protect_label": {
+    "description": "Does the facility have food defense measures to protect the outer perimeter and/or outside premises of the facility (e.g., cameras, security guards, fencing, lighting, alarm system, controlled access system, and/or locks)?"
+  },
+  "inner_perimeter_protect_label": "Does the facility have food defense measures in place for the inside of the facility (e.g., cameras, security guards, lighting, alarm system, controlled access system, and/or locks)?",
+  "@inner_perimeter_protect_label": {
+    "description": "Does the facility have food defense measures in place for the inside of the facility (e.g., cameras, security guards, lighting, alarm system, controlled access system, and/or locks)?"
+  },
+  "inner_perimeter_protect_label": "Are there procedures in place to ensure that all persons in the firm are authorized and properly identified when on the premises?",
+  "@inner_perimeter_protect_label": {
+    "description": "Are there procedures in place to ensure that all persons in the firm are authorized and properly identified when on the premises?"
+  },
+  "protect_food_ingerdients_adulteration_label": "Are there procedures to protect food and food ingredients including the water used in products from adulteration?",
+  "@protect_food_ingerdients_adulteration_label": {
+    "description": "Are there procedures to protect food and food ingredients including the water used in products from adulteration?"
+  },
+  "record_visitors_label": "Does the firm keep a record of all visitors? (e.g., log)",
+  "@record_visitors_label": {
+    "description": "Does the firm keep a record of all visitors? (e.g., log)"
+  },
+  "areas_restricted_label": "Is access to shipping/recieving area(s) restrictied to authorized personnel?",
+  "@areas_restricted_label": {
+    "description": "Is access to shipping/recieving area(s) restrictied to authorized personnel?"
+  },
+  "products_consistent_documents_label": "Is there a procedure to verify that incoming/shipped products are consistent with shipping documents?",
+  "@products_consistent_documents_label": {
+    "description": "Is there a procedure to verify that incoming/shipped products are consistent with shipping documents?"
+  },
+  "procedure_verify_driver_label": "Is there a procedure in place to verify driver identification to correlate with paper work?",
+  "@procedure_verify_driver_label": {
+    "description": "Is there a procedure in place to verify driver identification to correlate with paper work?"
+  },
+  "ir_created_label": "Was an IR created?",
+  "@ir_created_label": {
+    "description": "Was an IR created?"
+  },
+  "investigator_label": "Investigator",
+  "@investigator_label": {
+    "description": "Investigator"
+  },
+  "surv_gen_info_reason_label": "Reason",
+  "@surv_gen_info_reason_label": {
+    "description": "Reason"
+  },
+  "surv_gen_info_retail_label": "Retail/Special Project",
+  "@surv_gen_info_retail_label": {
+    "description": "Retail/Special Project"
+  },
+  "surv_gen_info_special_project_label": "Special Project",
+  "@surv_gen_info_special_project_label": {
+    "description": "Special Project"
+  },
+  "surv_gen_info_firm_name_label": "Firm Name",
+  "@surv_gen_info_firm_name_label": {
+    "description": "Firm Name"
+  },
+  "surv_gen_info_firm_name_at_action_label": "Firm Name at Time of Action",
+  "@surv_gen_info_firm_name_at_action_label": {
+    "description": "Firm Name at Time of Action"
+  },
+  "surv_gen_info_pri_busi_type_label": "Primary Business Type",
+  "@surv_gen_info_pri_busi_type_label": {
+    "description": "Primary Business Type"
+  },
+  "surv_gen_info_sec_busi_type_label": "Secondary Business Type",
+  "@surv_gen_info_sec_busi_type_label": {
+    "description": "Secondary Business Type"
+  },
+  "surv_gen_info_tri_busi_type_label": "Tertiary Business Type",
+  "@surv_gen_info_tri_busi_type_label": {
+    "description": "Tertiary Business Type"
+  },
+  "surv_gen_info_address_1_label": "Address 1",
+  "@surv_gen_info_address_1_label": {
+    "description": "Address 1"
+  },
+  "surv_gen_info_address_2_label": "Address 2",
+  "@surv_gen_info_address_2_label": {
+    "description": "Address 2"
+  },
+  "surv_gen_info_city_label": "City",
+  "@surv_gen_info_city_label": {
+    "description": "City"
+  },
+  "surv_gen_info_state_label": "State",
+  "@surv_gen_info_state_label": {
+    "description": "State"
+  },
+  "surv_gen_info_zip_label": "Zip Code",
+  "@surv_gen_info_zip_label": {
+    "description": "Zip Code"
+  },
+  "surv_add_info_follow_up_label": "Follow up Information",
+  "@surv_add_info_follow_up_label": {
+    "description": "Follow up Information"
+  },
+  "surv_add_info_follow_date_label": "If yes, provide the expected follow up date?",
+  "@surv_add_info_follow_date_label": {
+    "description": "If yes, provide the expected follow up date?"
+  },
+  "surv_add_info_follow_complete_label": "The follow up for this surveillance has been completed",
+  "@surv_add_info_follow_complete_label": {
+    "description": "The follow up for this surveillance has been completed"
+  },
+  "surv_add_info_follow_datepicker_label": "Date follow up completed",
+  "@surv_add_info_follow_datepicker_label": {
+    "description": "Date follow up completed"
+  },
+  "surv_tab_nav_bar_overview_label": "Overview",
+  "@surv_tab_nav_bar_overview_label": {
+    "description": "Overview"
+  },
+  "surv_tab_nav_bar_refresh_label": "Refresh",
+  "@surv_tab_nav_bar_refresh_label": {
+    "description": "Refresh"
+  },
+  "surv_tab_nav_bar_back_label": "Back",
+  "@surv_tab_nav_bar_back_label": {
+    "description": "Back"
+  },
+  "surv_tab_nav_bar_next_label": "Next",
+  "@surv_tab_nav_bar_next_label": {
+    "description": "Next"
+  },
+  "surv_import_products_observed_label": "Were imported products observed?",
+  "@surv_import_products_observed_label": {
+    "description": "Were imported products observed?"
+  },
+  "surv_import_bear_marks_label": "Did all imported products bear shipping marks?",
+  "@surv_import_bear_marks_label": {
+    "description": "Did all imported products bear shipping marks?"
+  },
+  "surv_import_documents_available_label": "Were the correct documents relating to the importation of the product in question available from the Importer of Record, product owner, custodian, Import Broker, or the interested party?",
+  "@surv_import_documents_available_label": {
+    "description": "Were the correct documents relating to the importation of the product in question available from the Importer of Record, product owner, custodian, Import Broker, or the interested party?"
+  },
+  "surv_import_shipping_marks_label": "Did all imported products bare shipping marks of Federal import inspection, if required?",
+  "@surv_import_shipping_marks_label": {
+    "description": "Did all imported products bare shipping marks of Federal import inspection, if required?"
+  },
+  "surv_import_phis_verify_label": "Was PHIS used to verify the products?",
+  "@surv_import_phis_verify_label": {
+    "description": "Was PHIS used to verify the products?"
+  },
+  "surv_import_eligible_countries_label": "Originated from eligible foreign countries?",
+  "@surv_import_eligible_countries_label": {
+    "description": "Originated from eligible foreign countries?"
+  },
+  "surv_import_eligible_establishments_label": "Originated from eligible foreign establishments?",
+  "@surv_import_eligible_establishments_label": {
+    "description": "Originated from eligible foreign establishments?"
+  },
+  "surv_import_while_eligibile_label": "Were produced while the foreign establishments was listed as eligible?",
+  "@surv_import_while_eligibile_label": {
+    "description": "Were produced while the foreign establishments was listed as eligible?"
+  },
+  "surv_import_passed_fsis_label": "Were inspected and passed by FSIS?",
+  "@surv_import_passed_fsis_label": {
+    "description": "Were inspected and passed by FSIS?"
+  },
+  "surv_sampling_taken_during_label": "Was a sample taken during the surveillance?",
+  "@surv_sampling_taken_during_label": {
+    "description": "Was a sample taken during the surveillance?"
+  },
+  "surv_sampling_not_taking_label": "Reason for not taking samples.",
+  "@surv_sampling_not_taking_label": {
+    "description": "Reason for not taking samples."
+  },
+  "surv_sampling_sample_taken_label": "Type of Sample Taken",
+  "@surv_sampling_sample_taken_label": {
+    "description": "Type of Sample Taken"
+  },
+  "surv_sampling_number_samples_label": "Number of MT05/MT06 Samples",
+  "@surv_sampling_number_samples_label": {
+    "description": "Number of MT05/MT06 Samples"
+  },
+  "surv_sampling_special_projects_label": "Number of Special Projects/Investigative Samples",
+  "@surv_sampling_special_projects_label": {
+    "description": "Number of Special Projects/Investigative Samples"
+  },
+  "surv_sampling_sample_result_label": "Sample Result",
+  "@surv_sampling_sample_result_label": {
+    "description": "Sample Result"
+  },
+  "surv_sampling_adequate_grinding_label": "Does the Firm keep adequate grinding records?",
+  "@surv_sampling_adequate_grinding_label": {
+    "description": "Does the Firm keep adequate grinding records?"
+  },
+  "surv_shell_eggs_temps_verified_label": "Were Shell Egg temperatures verified?",
+  "@surv_shell_eggs_temps_verified_label": {
+    "description": "Were Shell Egg temperatures verified?"
+  },
+  "surv_shell_eggs_temps_label": "Shell Egg Temperatures",
+  "@surv_shell_eggs_temps_label": {
+    "description": "Shell Egg Temperatures"
+  },
+  "surv_shell_eggs_properly_labeled_label": "Are Shell Egg properly labeled?",
+  "@surv_shell_eggs_properly_labeled_label": {
+    "description": "Are Shell Egg properly labeled?"
+  },
+  "surv_shell_eggs_storage_type_label": "Storage Type",
+  "@surv_shell_eggs_storage_type_label": {
+    "description": "Storage Type"
+  },
+  "surv_shell_eggs_coolers_label": "Coolers",
+  "@surv_shell_eggs_coolers_label": {
+    "description": "Coolers"
+  },
+  "surv_shell_eggs_alias_label": "Alias",
+  "@surv_shell_eggs_alias_label": {
+    "description": "Alias"
+  },
+  "surv_shell_eggs_temp_label": "Temperature",
+  "@surv_shell_eggs_temp_label": {
+    "description": "Temperature"
+  },
+  "surv_shell_eggs_transport_vehicles_label": "Transport Vehilces",
+  "@surv_shell_eggs_transport_vehicles_label": {
+    "description": "Transport Vehilces"
+  },
+  "surv_shell_eggs_vehicle_label": "Transport Vehilce",
+  "@surv_shell_eggs_vehicle_label": {
+    "description": "Transport Vehilce"
+  },
+  "surv_nonfood_labeling_verified_label": "Was Nutritional Labeling Verified",
+  "@surv_nonfood_labeling_verified_label": {
+    "description": "Was Nutritional Labeling Verified"
+  },
+  "surv_nonfood_properly_marked_label": "Are all meat, poultry, Siluriformes fish, shell eggs or egg products observed properly marked, labeled and packaged?",
+  "@surv_nonfood_properly_marked_label": {
+    "description": "Are all meat, poultry, Siluriformes fish, shell eggs or egg products observed properly marked, labeled and packaged?"
+  },
+  "surv_nonfood_identify_acts_label": "Do the records associated with the meat, poultry, Siluriformes fish, shell eggs or egg products observed properly identify these products in accordance to the Acts? ",
+  "@surv_nonfood_identify_acts_label": {
+    "description": "Do the records associated with the meat, poultry, Siluriformes fish, shell eggs or egg products observed properly identify these products in accordance to the Acts? "
+  },
+  "nav_rail_connectivity_label": "Connection status",
+  "@nav_rail_connectivity_label": {
+    "description": "Connection status"
+  },
+  "nav_rail_sync_label": "Data Sync",
+  "@nav_rail_sync_label": {
+    "description": "Data Sync"
+  },
+  "nav_rail_user_label": "User Information",
+  "@nav_rail_user_label": {
+    "description": "User Information"
+  },
+  "nav_rail_diagnostic_label": "Diagnostics",
+  "@nav_rail_diagnostic_label": {
+    "description": "Diagnostics"
+  },
+  "surv_exempt_review_conducted_label": "Was a Custom Exempt Review conducted?",
+  "@surv_exempt_review_conducted_label": {
+    "description": "Was a Custom Exepmt Review conducted?"
+  },
+  "surv_exempt_custom_slaughter_label": "Does this facility conduct (or perform) custom slaughter?",
+  "@surv_exempt_custom_slaughter_label": {
+    "description": "Does this facility conduct (or perform) custom slaughter?"
+  },
+  "surv_exempt_custom_processing_label": "Does this facility conduct (or perform) custom processing?",
+  "@surv_exempt_custom_processing_label": {
+    "description": "Does this facility conduct (or perform) custom processing?"
+  },
+  "surv_exempt_establish_email_label": "Establishment/Facility Email Address",
+  "@surv_exempt_establish_email_label": {
+    "description": "Establishment/Facility Email Address"
+  },
+  "surv_exempt_offical_establishment_label": "Official Establishment?",
+  "@surv_exempt_offical_establishment_label": {
+    "description": "Official Establishment?"
+  },
+  "surv_exempt_name_phv_label": "Name of PHV (last, first)",
+  "@surv_exempt_name_phv_label": {
+    "description": "Name of PHV (last, first)"
+  },
+  "surv_exempt_name_iic_label": "Name of IIC (last, first)",
+  "@surv_exempt_name_iic_label": {
+    "description": "Name of IIC (last, first)"
+  },
+  "surv_exempt_copy_owner_label": "Copy Given to Owner/Operator?",
+  "@surv_exempt_copy_owner_label": {
+    "description": "Copy Given to Owner/Operator?"
+  },
+  "surv_exempt_date_given_label": "Date Copy Given to Owner/Operator?",
+  "@surv_exempt_date_given_label": {
+    "description": "Date Copy Given to Owner/Operator?"
+  },
+  "surv_exempt_species_label": "Species",
+  "@surv_exempt_species_label": {
+    "description": "Species"
+  },
+  "surv_exempt_recommended_interval_label": "Recommended Review Interval",
+  "@surv_exempt_recommended_interval_label": {
+    "description": "Recommended Review Interval"
+  },
+  "surv_exempt_custom_label": "Custom Exempt Review",
+  "@surv_exempt_custom_label": {
+    "description": "Custom Exempt Review"
+  },
+  "surv_exempt_humane_handling_label": "Is humane slaughter/handling of livestock acceptable?",
+  "@surv_exempt_humane_handling_label": {
+    "description": "Is humane slaughter/handling of livestock acceptable?"
+  },
+  "surv_exempt_recordkeeping_acceptable_label": "Is recordkeeping and documentation acceptable?",
+  "@surv_exempt_recordkeeping_acceptable_label": {
+    "description": "Is recordkeeping and documentation acceptable?"
+  },
+  "surv_exempt_sanitary_operations_label": "Are sanitary operations acceptable?",
+  "@surv_exempt_sanitary_operations_label": {
+    "description": "Are sanitary operations acceptable?"
+  },
+  "surv_exempt_pest_control_label": "Is pest control acceptable?",
+  "@surv_exempt_pest_control_label": {
+    "description": "Is pest control acceptable?"
+  },
+  "surv_exempt_inedible_material_label": "Is inedible material (including SRM's) acceptable?",
+  "@surv_exempt_inedible_material_label": {
+    "description": "Is inedible material (including SRM's) acceptable?"
+  },
+  "surv_exempt_labeling_acceptable_label": "Is marking and labeling acceptable?",
+  "@surv_exempt_labeling_acceptable_label": {
+    "description": "Is marking and labeling acceptable?"
+  },
+  "surv_exempt_pathogen_acceptable_label": "Is pathogen control acceptable?",
+  "@surv_exempt_pathogen_acceptable_label": {
+    "description": "Is pathogen control acceptable?"
+  },
+  "surv_exempt_water_acceptable_label": "Is water supply acceptable?",
+  "@surv_exempt_water_acceptable_label": {
+    "description": "Is water supply acceptable?"
+  },
+  "surv_exempt_waste_acceptable_label": "Is sewage and waste disposal acceptable?",
+  "@surv_exempt_waste_acceptable_label": {
+    "description": "Is sewage and waste disposal acceptable?"
+  },
+  "surv_exempt_adulterated_misbranded_label": "Adulterated or Misbranded Products",
+  "@surv_exempt_adulterated_misbranded_label": {
+    "description": "Adulterated or Misbranded Products"
+  },
+  "surv_exempt_adulterated_observed_label": "Were adulterated or misbranded products observed during this review?",
+  "@surv_exempt_adulterated_observed_label": {
+    "description": "Were adulterated or misbranded products observed during this review?"
+  },
+  "surv_exempt_adulterated_occur_label": "Do observed conditions make it likely that adulterated or misbranded product would occur?",
+  "@surv_exempt_adulterated_occur_label": {
+    "description": "Do observed conditions make it likely that adulterated or misbranded product would occur?"
+  },
+  "surv_exempt_legal_privileges_label": "Legal Order and Removal of Privileges",
+  "@surv_exempt_legal_privileges_label": {
+    "description": "Legal Order and Removal of Privileges"
+  },
+  "surv_exempt_admin_consent_label": "This facility is operating under an administrative consent agreement or other applicable legal order.",
+  "@surv_exempt_admin_consent_label": {
+    "description": "This facility is operating under an administrative consent agreement or other applicable legal order."
+  },
+  "surv_exempt_recommend_removal_label": "This facility has been recommended to EOB for removal of custom exempt privileges in the last year.",
+  "@surv_exempt_recommend_removal_label": {
+    "description": "This facility has been recommended to EOB for removal of custom exempt privileges in the last year."
+  },
+  "surv_import_products_observed_label": "Were imported products observed?",
+  "@surv_import_products_observed_label": {
+    "description": "Were imported products observed?"
+  },
+  "surv_import_bear_marks_label": "Did all imported products bear shipping marks?",
+  "@surv_import_bear_marks_label": {
+    "description": "Did all imported products bear shipping marks?"
+  },
+  "surv_import_documents_available_label": "Were the correct documents relating to the importation of the product in question available from the Importer of Record, product owner, custodian, Import Broker, or the interested party?",
+  "@surv_import_documents_available_label": {
+    "description": "Were the correct documents relating to the importation of the product in question available from the Importer of Record, product owner, custodian, Import Broker, or the interested party?"
+  },
+  "surv_import_shipping_marks_label": "Did all imported products bare shipping marks of Federal import inspection, if required?",
+  "@surv_import_shipping_marks_label": {
+    "description": "Did all imported products bare shipping marks of Federal import inspection, if required?"
+  },
+  "surv_import_phis_verify_label": "Was PHIS used to verify the products?",
+  "@surv_import_phis_verify_label": {
+    "description": "Was PHIS used to verify the products?"
+  },
+  "surv_import_eligible_countries_label": "Originated from eligible foreign countries?",
+  "@surv_import_eligible_countries_label": {
+    "description": "Originated from eligible foreign countries?"
+  },
+  "surv_import_eligible_establishments_label": "Originated from eligible foreign establishments?",
+  "@surv_import_eligible_establishments_label": {
+    "description": "Originated from eligible foreign establishments?"
+  },
+  "surv_import_while_eligibile_label": "Were produced while the foreign establishments was listed as eligible?",
+  "@surv_import_while_eligibile_label": {
+    "description": "Were produced while the foreign establishments was listed as eligible?"
+  },
+  "surv_import_passed_fsis_label": "Were inspected and passed by FSIS?",
+  "@surv_import_passed_fsis_label": {
+    "description": "Were inspected and passed by FSIS?"
+  },
+  "surv_sampling_taken_during_label": "Was a sample taken during the surveillance?",
+  "@surv_sampling_taken_during_label": {
+    "description": "Was a sample taken during the surveillance?"
+  },
+  "surv_sampling_not_taking_label": "Reason for not taking samples.",
+  "@surv_sampling_not_taking_label": {
+    "description": "Reason for not taking samples."
+  },
+  "surv_sampling_sample_taken_label": "Type of Sample Taken",
+  "@surv_sampling_sample_taken_label": {
+    "description": "Type of Sample Taken"
+  },
+  "surv_sampling_number_samples_label": "Number of MT05/MT06 Samples",
+  "@surv_sampling_number_samples_label": {
+    "description": "Number of MT05/MT06 Samples"
+  },
+  "surv_sampling_special_projects_label": "Number of Special Projects/Investigative Samples",
+  "@surv_sampling_special_projects_label": {
+    "description": "Number of Special Projects/Investigative Samples"
+  },
+  "surv_sampling_sample_result_label": "Sample Result",
+  "@surv_sampling_sample_result_label": {
+    "description": "Sample Result"
+  },
+  "surv_sampling_adequate_grinding_label": "Does the Firm keep adequate grinding records?",
+  "@surv_sampling_adequate_grinding_label": {
+    "description": "Does the Firm keep adequate grinding records?"
+  },
+  "nav_rail_connectivity_label": "Connection status",
+  "@nav_rail_connectivity_label": {
+    "description": "Connection status"
+  },
+  "nav_rail_sync_label": "Connection status",
+  "@nav_rail_sync_label": {
+    "description": "Connection status"
+  },
+  "nav_rail_user_label": "User Information",
+  "@nav_rail_user_label": {
+    "description": "User Information"
+  },
+  "nav_rail_diagnostic_label": "Diagnostics",
+  "@nav_rail_diagnostic_label": {
+    "description": "Diagnostics"
+  },
+  "written_food_defense_plan_label": "Is there a Food Defense Plan?",
+  "@written_food_defense_plan_label": {
+    "description": "Is there a Food Defense Plan?"
+  },
+  "surv_page_general_info_label": "General Information",
+  "@surv_page_general_info_label": {
+    "description": "General Information"
+  },
+  "surv_page_food_defense_label": "Food Defense",
+  "@surv_page_food_defense_label": {
+    "description": "Food Defense"
+  },
+  "surv_page_food_safety_label": "Food Safety",
+  "@surv_page_food_safety_label": {
+    "description": "Food Safety"
+  },
+  "surv_page_additional_info_label": "Additional Information",
+  "@surv_page_additional_info_label": {
+    "description": "Additional Information"
+  },
+  "surv_page_imported_products_label": "Imported Products",
+  "@surv_page_imported_products_label": {
+    "description": "Imported Products"
+  },
+  "surv_page_sampling_info_label": "Sampling Information",
+  "@surv_page_sampling_info_label": {
+    "description": "Sampling Information"
+  },
+  "surv_page_order_verification_label": "Order Verification",
+  "@surv_page_order_verification_label": {
+    "description": "Order Verification"
+  },
+  "surv_page_custom_exempt_label": "Custom Exempt Review",
+  "@surv_page_custom_exempt_label": {
+    "description": "Custom Exempt Review"
+  },
+  "surv_page_non_food_safety_label": "Non Food Safety",
+  "@surv_page_non_food_safety_label": {
+    "description": "Non Food Safety"
+  },
+  "surv_page_shell_eggs_label": "Shell Eggs",
+  "@surv_page_shell_eggs_label": {
+    "description": "Shell Eggs"
+  },
+  "surv_page_special_projects_label": "Special Projects",
+  "@surv_page_special_projects_label": {
+    "description": "Special Projects"
+  },
+
+  "firm_page_general_info_label": "General Information",
+  "@firm_page_general_info_label": {
+    "description": "General Information"
+  },
+  "firm_page_owner_info_label": "Owner Information",
+  "@firm_page_owner_info_label": {
+    "description": "Owner Information"
+  },
+  "firm_page_managaging_officials_label": "Managing Officials Information",
+  "@firm_page_managaging_officials_label": {
+    "description": "Managing Officials Information"
+  },
+  "firm_page_organizing_struct_label": "Organization Structure",
+  "@firm_page_organizing_struct_label": {
+    "description": "Organization Structure"
+  },
+  "firm_page_additional_info_label": "Additional Information",
+  "@firm_page_additional_info_label": {
+    "description": "Additional Information"
+  },
+  "firm_page_product_info_label": "Product Information",
+  "@firm_page_product_info_label": {
+    "description": "Product Information"
+  },
+
+  "firm_general_required_field_label": "Required Field *",
+  "@firm_general_required_field_label": {
+    "description": "Required Field *"
+ },
+
+"firm_general_contact_ro_label": "Contact the regional office before contacting this firm?",
+  "@firm_general_contact_ro_label": {
+    "description": "Contact the regional office before contacting this firm?"
+ },
+
+"firm_general_delete_firm_record_label": "Delete Firm Record?",
+  "@firm_general_delete_firm_record_label": {
+    "description": "Delete Firm Record?"
+ },
+"firm_general_business_info_label": "Business Information",
+  "@firm_general_business_info_label": {
+    "description": "Business Information"
+ },
+
+"firm_general_name_address_label": "Main Address",
+  "@firm_general_name_address_label": {
+    "description": "Main Address"
+ },
+
+"firm_general_firm_name_label": "Firm Name *",
+  "@firm_general_firm_name_label": {
+    "description": "Firm Name"
+ },
+
+"firm_general_to_label": "to",
+  "@firm_general_to_label": {
+    "description": "to"
+ },
+
+"firm_general_doing_business_as_label": "Doing Business As",
+  "@firm_general_doing_business_as_label": {
+    "description": "Doing Business As"
+ },
+
+"firm_general_also_known_as_label": "Also Known As",
+  "@firm_general_also_known_as_label": {
+    "description": "Also Known As"
+ },
+
+"firm_general_previous_firm_name_label": "Previous Firm Name",
+  "@firm_general_previous_firm_name_label": {
+    "description": "Previous Firm Name"
+ },
+
+"firm_general_county_label": "County",
+  "@firm_general_county_label": {
+    "description": "County"
+ },
+
+"firm_general_region_label": "Region *",
+  "@firm_general_county_label": {
+    "description": "Region *"
+ },
+
+"firm_general_sub_region_label": "Sub Region *",
+  "@firm_general_sub_region_label": {
+    "description": "Sub Region *"
+ },
+
+"firm_general_assignment_label": "Assignment *",
+  "@firm_general_assignment_label": {
+    "description": "Assignment *"
+ },
+
+"firm_general_latitude_label": "Latitude",
+  "@firm_general_latitude_label": {
+    "description": "Latitude"
+ },
+
+"firm_general_latitude_label": "Latitude",
+  "@firm_general_latitude_label": {
+    "description": "Latitude"
+ },
+
+"firm_general_longitude_label": "Longitude",
+  "@firm_general_longitude_label": {
+    "description": "Longitude"
+ },
+
+"firm_general_primary_business_type_label": "Primary Business Type",
+  "@firm_general_primary_business_type_label": {
+    "description": "Primary Business Type"
+ },
+
+"firm_general_secondary_business_type_label": "Secondary Business Type",
+  "@firm_general_secondary_business_type_label": {
+    "description": "Secondary Business Type"
+ },
+
+"firm_general_tertiary_business_type_label": "Tertiary Business Type",
+  "@firm_general_secondary_business_type_label": {
+    "description": "Tertiary Business Type"
+ },
+
+"firm_general_business_activites_label": "Business Activities",
+  "@firm_general_business_activites_label": {
+    "description": "Business Activities"
+ },
+
+"firm_general_tier_label": "Tier",
+  "@firm_general_tier_label": {
+    "description": "Tier"
+ },
+
+"firm_general_order_information_label": "Order Information",
+  "@firm_general_order_information_label": {
+    "description": "Order Information"
+  },
+
+"firm_general_firm_is_under_order_label": "Firm is Under Order?",
+  "@firm_general_firm_is_under_order_label": {
+    "description": "Firm is Under Order?"
+ },
+
+"firm_general_order_is_permanent_or_indefinite_label": "Order is Permanent or Indefinite?",
+  "@firm_general_order_is_permanent_or_indefinite_label": {
+    "description": "Order is Permanent or Indefinite?"
+ },
+
+"firm_general_type_of_order_label": "Type of Order",
+  "@firm_general_type_of_order_label": {
+    "description": "Type of Order"
+ },
+
+"firm_general_expiration_of_order_label": "Expiration Of Order",
+  "@firm_general_expiration_of_order_label": {
+    "description": "Expiration Of Order"
+ },
+
+"firm_general_mailing_address_label": "Mailing Address",
+  "@firm_general_mailing_address_label": {
+    "description": "Mailing Address"
+ },
+
+"firm_general_same_as_firm_address_label": "Same as Firm Address",
+  "@firm_general_same_as_firm_address_label": {
+    "description": "Same as Firm Address"
+ },
+
+"firm_general_closed_label": "Closed",
+  "@firm_general_closed_label": {
+    "description": "Closed"
+},
+
+"firm_general_close_label": "Close",
+  "@firm_general_close_label": {
+    "description": "Close"
+},
+
+"firm_general_comments_label": "Comments",
+  "@firm_general_comments_label": {
+    "description": "Comments"
+},
+
+"firm_general_monday_label": "Monday",
+  "@firm_general_monday_label": {
+    "description": "Monday"
+},
+
+"firm_general_tuesday_label": "Tuesday",
+  "@firm_general_tuesday_label": {
+    "description": "Tuesday"
+},
+
+"firm_general_wednesday_label": "Wednesday",
+  "@firm_general_wednesday_label": {
+    "description": "Wednesday"
+},
+
+"firm_general_thursday_label": "Thursday",
+  "@firm_general_thursday_label": {
+    "description": "Thursday"
+ },
+
+"firm_general_friday_label": "Friday",
+  "@firm_general_friday_label": {
+    "description": "Friday"
+},
+
+"firm_general_saturday_label": "Saturday",
+  "@firm_general_saturday_label": {
+    "description": "Saturday"
+},
+
+"firm_general_sunday_label": "Sunday",
+  "@firm_general_sunday_label": {
+    "description": "Sunday"
+ },
+
+"firm_general_miscellaneous_label": "Miscellaneous",
+  "@firm_general_miscellaneous_label": {
+    "description": "Miscellaneous"
+},
+
+"firm_general_number_of_floors_label": "Number of Floors",
+  "@firm_general_number_of_floors_label": {
+    "description": "Number of Floors"
+},
+
+"firm_general_mailing_city_label": "Mailing City",
+  "@firm_general_mailing_city_label": {
+    "description": "Mailing City"
+},
+
+"firm_general_mailing_state_label": "Mailing State",
+  "@firm_general_mailing_state_label": {
+    "description": "Mailing State"
+},
+
+"firm_general_mailing_county_label": "Mailing County",
+  "@firm_general_mailing_county_label": {
+    "description": "Mailing County"
+},
+
+"firm_general_mailing_zip_code_label": "Mailing Zip Code",
+  "@firm_general_mailing_zip_code_label": {
+    "description": "Mailing Zip Code"
+},
+
+"firm_general_hours_of_operation_label": "Hours of Operation",
+  "@firm_general_hours_of_operation_label": {
+    "description": "Hours of Operation"
+},
+
+"firm_general_open_label": "Open",
+  "@firm_general_open_label": {
+    "description": "Open"
+},
+
+"firm_general_approximate_square_footage_label": "Approximate Square Footage (no comma)",
+  "@firm_general_hours_of_operation_label": {
+    "description": "Approximate Square Footage (no comma)"
+},
+
+"firm_general_approximate_number_of_employees_label": "Approximate Number of Employees",
+  "@firm_general_approximate_number_of_employees_label": {
+    "description": "Approximate Number of Employees"
+},
+
+"firm_general_is_firm_registered_label": "Is Firm Registered?",
+  "@firm_general_is_firm_registered_label": {
+    "description": "Is Firm Registered?"
+},
+
+"firm_general_is_there_a_back_up_energy_source_label": "Is there a back-up energy source (i.e. generator)?",
+  "@firm_general_is_there_a_back_up_energy_source_label": {
+    "description": "Is there a back-up energy source (i.e. generator)?"
+},
+
+"firm_general_establishment_number_label": "Establishment Number",
+  "@firm_general_establishment_number_label": {
+    "description": "Establishment Number"
+},
+
+"firm_owner_update_owner_information_label": "Update Owner Information?",
+  "@firm_owner_update_owner_information_label": {
+    "description": "Update Owner Information?"
+},
+
+"firm_owner_date_of_ownership_update_label": "Date of Ownership Update",
+  "@firm_owner_date_of_ownership_update_label": {
+    "description": "Date of Ownership Update"
+},
+
+"firm_owner_date_format_label": "(mm/dd/yyyy)",
+  "@firm_owner_date_format_label": {
+    "description": "(mm/dd/yyyy)"
+ },
+
+"firm_name_label": "Name",
+  "@firm_owner_name_label": {
+    "description": "Name"
+},
+
+"firm_owner_title_label": "Title",
+  "@firm_owner_title_label": {
+    "description": "Title"
+},
+
+"firm_owner_contact_phone_number_label": "Contact Phone Number",
+  "@firm_owner_contact_phone_number_label": {
+    "description": "Contact Phone Number"
+},
+
+"firm_owner_ext_label": "Ext",
+  "@firm_owner_ext_label": {
+    "description": "Ext"
+},
+
+"firm_owner_contact_fax_number_label": "Contact Fax Number",
+  "@firm_owner_contact_fax_number_label": {
+    "description": "Contact Fax Number"
+},
+
+"firm_owner_contact_email_address_label": "Contact Email Address",
+  "@firm_owner_contact_email_address_label": {
+    "description": "Contact Email Address"
+},
+
+"firm_owner_mobile_number_label": "Mobile Number",
+  "@firm_owner_mobile_number_label": {
+    "description": "Mobile Number"
+},
+
+"firm_owner_receive_messages_on_mobile_phone_label": "Receive messages on mobile phone?",
+  "@firm_owner_receive_messages_on_mobile_phone_label": {
+    "description": "Receive messages on mobile phone?"
+},
+
+"firm_owner_owner_history_label": "Owner History",
+  "@firm_owner_owner_history_label": {
+    "description": "Owner History"
+},
+
+"firm_managing_first_managing_official_label": "First Managing Official",
+  "@firm_managing_first_managing_official_label": {
+    "description": "First Managing Official"
+  },
+
+  "firm_managing_second_managing_official_label": "Second Managing Official",
+  "@firm_managing_second_managing_official_label": {
+    "description": "Second Managing Official"
+  },
+
+  "firm_organization_same_as_firm_name_label": "Same as firm name?",
+  "@firm_organization_same_as_firm_name_label": {
+    "description": "Same as firm name?"
+  },
+
+  "firm_organization_same_as_mailing_address_label": "Same as mailing address?",
+  "@firm_organization_same_as_mailing_address_label": {
+    "description": "Same as mailing address?"
+  },
+
+ "firm_organization_same_as_physical_address_label": "Same as physical address?",
+  "@firm_organization_same_as_physical_address_label": {
+    "description": "Same as physical address?"
+  },
+
+  "firm_organization_name_of_official1_label": "Name of Official 1 *",
+  "@firm_organization_name_of_official1_label": {
+    "description": "Name of Official 1 *"
+  },
+
+  "firm_organization_name_of_official2_label": "Name of Official 2",
+  "@firm_organization_name_of_official2_label": {
+    "description": "Name of Official 2"
+  },
+
+  "firm_organization_name_of_official3_label": "Name of Official 3",
+  "@firm_organization_name_of_official3_label": {
+    "description": "Name of Official 3"
+  },
+
+ "firm_organization_name_of_official4_label": "Name of Official 4",
+  "@firm_organization_name_of_official4_label": {
+    "description": "Name of Official 4"
+  },
+
+  "firm_organization_organization_name_label": "Organization Name",
+  "@firm_organization_organization_name_label": {
+    "description": "Organization Name"
+  },
+
+  "firm_organization_organization_type_label": "Organization Type",
+  "@firm_organization_organization_type_label": {
+    "description": "Organization Type"
+  },
+
+  "firm_organization_organization_address1_label": "Address 1",
+  "@firm_organization_organization_address1": {
+    "description": "Address 1"
+  },
+
+  "firm_organization_organization_address2_label": "Address 2",
+  "@firm_organization_organization_address2_label": {
+    "description": "Address 2"
+  },
+
+  "firm_product_type_of_product_handled_label": "Type of Product Handled",
+  "@firm_product_type_of_product_handled_label": {
+    "description": "Type of Product Handled"
+  },
+
+ "firm_product_product_origin_label": "Product Origin",
+  "@firm_product_product_origin_label": {
+    "description": "Product Origin"
+  },
+
+"firm_product_if_imported_please_specify_the_country_of_origin_label": "If imported, please specify the Country of Origin",
+  "@firm_product_if_imported_please_specify_the_country_of_origin_label": {
+    "description": "If imported, please specify the Country of Origin"
+},
+
+"firm_product_country_of_origin_label": "Country of Origin",
+  "@firm_product_country_of_origin_label": {
+    "description": "Country of Origin"
+},
+
+"firm_additional_other_eegulatory_agency_contact_information_label": "Other Regulatory Agency Contact Information",
+  "@firm_additional_other_eegulatory_agency_contact_information_label": {
+    "description": "Other Regulatory Agency Contact Information"
+},
+
+"firm_additional_update_pest_control_information_label": "Update Pest Control Information?",
+  "@firm_additional_update_pest_control_information_label": {
+    "description": "Update Pest Control Information?"
+},
+
+"firm_additional_pest_control_provider_information_label": "Pest Control Provider Information",
+  "@firm_additional_pest_control_provider_information_label": {
+    "description": "Pest Control Provider Information"
+},
+
+"firm_additional_date_of_pest_control_update_label": "Date of Pest Control Update",
+  "@firm_additional_date_of_pest_control_update_label": {
+    "description": "Date of Pest Control Update"
+},
+
+"firm_additional_is_pest_Control_selfadministered_label": "Is Pest Control Self-Administered?",
+  "@firm_additional_is_pest_Control_selfadministered_label": {
+    "description": "Is Pest Control Self-Administered?"
+},
+
+"firm_additional_frequency_label": "Frequency",
+  "@firm_additional_frequency_label": {
+    "description": "Frequency"
+},
+
+"firm_additional_email_label": "Email",
+  "@firm_additional_email_label": {
+    "description": "Email"
+},
+
+"firm_additional_pest_control_history_label": "Pest Control History",
+  "@firm_additional_pest_control_history_label": {
+    "description": "Pest Control History"
+},
+
+"firm_attachments_document_name_label": "Document Name",
+  "@firm_attachments_document_name_label": {
+    "description": "Document Name"
+},
+
+"firm_attachments_size_label": "Size",
+  "@firm_attachments_size_label": {
+    "description": "Size"
+}
+} 

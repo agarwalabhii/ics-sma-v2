@@ -1,0 +1,120 @@
+# Flutter
+# Build your Dart project and run tests with Flutter
+# Add steps that analyze code, save build artifacts, deploy, and more:
+
+trigger:
+- main
+- master
+- develop
+- Release/*
+- release/*
+- Feature/*
+- feature/*
+
+pool:
+  name: ICS_SMA
+  demands:
+  - Agent.OS -equals Windows_NT
+  - Agent.OSArchitecture -equals X64
+
+variables:
+  - group: "Java Environment Variables - Windows"
+  - name: REPORTS_DIRECTORY
+    value: 'build\reports'
+  - name: COVERAGE_DIRECTORY
+    value: '$(REPORTS_DIRECTORY)\coverage'
+  - name: LCOV_FILE
+    value: '$(COVERAGE_DIRECTORY)\lcov.info'
+  - name: JUNIT_FILE
+    value: '$(REPORTS_DIRECTORY)\testResults.xml'
+
+steps:
+- checkout: self
+  persistCredentials: true
+  clean: true
+- checkout: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_common_ux@master
+- checkout: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_local_data@master
+- checkout: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_remote_data@master
+
+- task: hey24sheep.flutter.flutter-install.FlutterInstall@0
+  displayName: 'Install Flutter SDK'
+  inputs:
+    version: custom
+    customVersion: 3.16.0
+    customArch: x64
+
+- task: SonarQubePrepare@5
+  displayName: 'Prepare Pipeline for SonarQube Analysis'
+  inputs:
+    SonarQube: 'USDA FSIS SonarQube Server'
+    scannerMode: 'CLI'
+
+- task: hey24sheep.flutter.flutter-command.FlutterCommand@0
+  displayName: 'Run Diagnostics'
+  inputs:
+    projectDirectory: '$(system.defaultworkingdirectory)\ics-sma-frontend'
+    arguments: 'doctor -v'
+
+- task: PowerShell@2
+  displayName: 'Update pubspec.yaml'
+  inputs:
+    targetType: 'inline'
+    script: |
+      cd ics-sma-frontend
+      $gitlog = git log
+      $ext = [regex]::matches($gitlog, "commit").count
+      Write-Output "Version extension number is $ext"
+      $yaml = Get-Content -Path .\pubspec.yaml
+      $yaml = $yaml -replace "0000", "$ext"
+      Set-Content -Path .\pubspec.yaml -Value $yaml
+
+- task: hey24sheep.flutter.flutter-command.FlutterCommand@0
+  displayName: 'Flutter Clean'
+  inputs:
+    projectDirectory: '$(system.defaultworkingdirectory)\ics-sma-frontend'
+    arguments: 'clean'
+
+- task: PowerShell@2
+  displayName: 'Create Developer Release Notes File'
+  inputs:
+    targetType: 'inline'
+    script: |
+      cd ics-sma-frontend
+      git log --since="last-pr" > "$(system.defaultworkingdirectory)\ics-sma-frontend\assets\release_notes\developer_notes.md"
+  
+- task: hey24sheep.flutter.flutter-build.FlutterBuild@0
+  displayName: 'Build Windows App'
+  inputs:
+    target: windows
+    projectDirectory: '$(system.defaultworkingdirectory)\ics-sma-frontend'
+
+- task: PowerShell@2
+  displayName: 'Create Publish Directory'
+  inputs:
+    targetType: 'inline'
+    script: |
+      cd ics-sma-frontend
+      $path = "$(system.defaultworkingdirectory)\ics-sma-frontend\publish"
+      If(!(test-path -PathType container $path))
+      {
+            New-Item -ItemType Directory -Path $path
+      }
+
+- task: hey24sheep.flutter.flutter-command.FlutterCommand@0
+  displayName: 'Create MSIX File'
+  inputs:
+    projectDirectory: '$(system.defaultworkingdirectory)\ics-sma-frontend'
+    arguments: 'pub run msix:publish --install-certificate false'
+
+- task: CopyFiles@2
+  displayName: 'Copy Files to: $(build.artifactstagingdirectory)'
+  inputs:
+    SourceFolder: '$(system.defaultworkingdirectory)\ics-sma-frontend'
+    Contents: '**\*.msix'
+    TargetFolder: '$(build.artifactstagingdirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifact: MSIX App'
+  inputs:
+    PathtoPublish: '$(build.artifactstagingdirectory)'
+    ArtifactName: 'assurancenet-sma-client'
