@@ -2,7 +2,7 @@ name: sma_common_ux
 description: SMA Common UX
 publish_to: 'none'
 version: 0.5.0
-repository: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_common_ux
+repository: https://github.com/agarwalabhii/ics-sma-v2/tree/master/sma_common_ux
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
@@ -42,11 +42,11 @@ dependencies:
   shared_preferences: ^2.0.20
   sma_local_data:
     git:
-      url: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_local_data
+      url: https://github.com/agarwalabhii/ics-sma-v2/tree/master/sma_local_data
       ref: master
   sma_remote_data:
     git:
-      url: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_remote_data
+      url: https://github.com/agarwalabhii/ics-sma-v2/tree/master/sma_remote_data
       ref: master
   syncfusion_flutter_calendar: ^23.1.36
   tuple: ^2.0.2

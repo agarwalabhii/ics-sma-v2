@@ -2,7 +2,7 @@ name: sma_local_data
 description: SMA Local Data Library
 version: 0.5.0
 publish_to: 'none'
-repository: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_local_data
+repository: https://github.com/agarwalabhii/ics-sma-v2/tree/master/sma_local_data
 
 environment:
   sdk: ^3.1.0

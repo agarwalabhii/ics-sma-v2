@@ -27,7 +27,7 @@ dependencies:
   shared_preferences: ^2.0.20
   sma_local_data:
     git:
-      url: https://bitbucket.org/agarwalabhii/ics-sma-v2/src/master/sma_local_data
+      url: https://github.com/agarwalabhii/ics-sma-v2/tree/master/sma_local_data
       ref: master
 
 dev_dependencies:
